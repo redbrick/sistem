@@ -4,7 +4,7 @@ $(document).ready( function(){
 	// Get the event list from JSON (because JSON is nice) and send data to loadEvents function.
 	// This call is anynchronous, meaning it will display the data once the JSON is loaded, 
 	// but the code continues to execute in the background
-	$.getJSON('/events.json', function(data){ loadEvents(data);});
+	$.getJSON('../events.json', function(data){ loadEvents(data);});
 
 	// Change the color of the header based on the amount of times you visited the page
 	$('header h1 span').css({color: colors[(v+3) % 5]});
