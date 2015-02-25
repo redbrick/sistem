@@ -1,0 +1,71 @@
+<!--
+#######################################
+# 			Techweek 2015             #
+#                                     #
+#  Redbrick - DCU Networking Society  #
+# 									  #
+# 									  #
+#######################################
+
+
+I see that you are intersted in the source of this website.
+To speed up the process we used materializecss.com for 
+Google Material Design CSS
+
+The content is loaded from a JSON file (because just HTML is boring)
+and then loaded using custom JavaScript script and jQuery
+
+
+Enjoy viewing!
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>TechWeek 2015 | Dublin City University</title>
+
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<!--Import custom stylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/main.css">
+
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<h1><span>Tech</span>Week</h1>
+			<p>Dublin City University 9<sup>th</sup> - 13<sup>th</sup> March 2015</p>
+		</header>
+
+		<!-- Countdown is show up to 10 minutes before the event -->
+		<div id="countdown">
+			TechWeek Starts in: 
+			<div class="counter">
+				<span>&nbsp;</span>
+				<span>&nbsp;</span>
+				<span>&nbsp;</span>
+				<span>&nbsp;</span>
+			</div>
+		</div>
+
+		<!-- 10 minutes before start of the event the livestream will come on -->
+		<div class="container" id="livestream">
+			<video id="live" controls poster="https://www.redbrick.dcu.ie/includes/images/logo.png">
+				<source src="">
+			</video>
+		</div>
+
+		<!-- All events are loaded into this element -->
+		<div class="events"></div>
+	</div>
+
+	<!-- The script is loaded and ran -->
+	<script type="text/javascript" src="js/main.js"></script> <!-- <<<<<< EXPLORE ME <<<<<<< -->
+</body>
+</html>

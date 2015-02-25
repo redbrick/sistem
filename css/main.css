@@ -1,0 +1,75 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400);
+
+header {
+	text-align: center;
+}
+
+header h1 {
+	margin: 0.5em 0;
+	margin-bottom: 0.3em;
+	font-size: 10vw;
+	font-weight: 100;
+}
+
+header h1 span {
+	color: red;
+	font-weight: 300;
+}
+
+video {
+	width: 100%;
+}
+
+.day {
+	margin-bottom: 5vh;
+}
+
+.time {
+	float: left;
+	display: inline-block;
+	width: 10%;
+	max-width: 50px;
+	font-size: 1vh;
+}
+
+.event {
+	display: inline-block;
+	width: 60%;
+}
+
+.place {
+	display: block;
+	float: right;
+	padding: 0 20px;
+}
+
+p {
+	font-weight: 300;
+}
+
+ul {
+	margin-bottom: 2vh;
+}
+
+.collapsable-header {
+	height: initial;
+	-webkit-transition: all 0.2s;
+}
+
+#countdown {
+	display: none;
+	text-align: center;
+}
+
+#countdown .counter {
+	display: block;
+}
+
+#countdown .counter span {
+	display: block;
+	font-size: 3vw;
+}
+
+#livestream {
+	display: none;
+}

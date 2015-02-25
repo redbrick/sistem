@@ -1,0 +1,291 @@
+[
+	{
+		"day": "Monday",
+		"description": "Amazon",
+		"events": [
+			{
+				"name":"Opening Event",
+				"by":"",
+				"time": "10am",
+				"place": {
+					"id": "L101",
+					"map": ""
+				},
+				"description": "Opening of TechWeek 2015"
+			},
+			{
+				"name": "Amazon CloudWatch",
+				"by":"Amazon",
+				"time":"12pm",
+				"place": {
+					"id": "",
+					"map": ""
+				},
+				"description": "Amazon CloudWatch"
+			},
+			{
+				"name": "Internet of Things",
+				"by":"",
+				"time":"1pm",
+				"place": {
+					"id": "",
+					"map": ""
+				},
+				"description" : "Internet of Things"
+			},
+			{
+				"name": "Lunch",
+				"by":"",
+				"time": "2pm",
+				"place": {
+					"id": "",
+					"map": ""
+				},
+				"description": "Time for a break"
+			},
+			{
+				"name": "Project Workshops with Amazon SDEs",
+				"by":"",
+				"time": "3pm",
+				"place": {
+					"id": "",
+					"map": ""
+				},
+				"description": "Amazon"
+			},
+			{
+				"name": "Colin Whittaker",
+				"by":"",
+				"time": "4pm",
+				"place": {
+					"id": "",
+					"map": ""
+				},
+				"description": "Colin Whittaker"
+			},
+			{
+				"name": "Networking",
+				"by":"",
+				"time": "3pm",
+				"place": {
+					"id": "",
+					"map": ""
+				},
+				"description": "Networking"
+			}
+		]
+	},
+	{
+		"day": "Tuesday",
+		"description": "RB & Intercom",
+		"events": [
+			{
+				"name":"Associate Talks", 
+				"by":"",
+				"time": "10am",
+				"place": {
+					"id": "",
+					"map": ""
+				},
+				"description": "Talks given by old RedBrick members"
+			},
+			{
+				"name": "Intercom",
+				"by":"","time":"12pm",
+				"place": {
+					"id": "",
+					"map": ""
+				},
+				"description": "Intercom talks"
+			}
+		]
+	},
+	{
+		"day": "Wednesday",
+		"description": "Openet",
+		"events": [
+			{
+				"name":"Admin Tales of Fail",
+				"by":"",
+				"time": "2:30pm",
+				"place": {
+					"id": "",
+					"map": ""
+				},
+				"description": "How Redbrick was broken, but then fixed by our amazing admins"
+			},
+			{
+				"name": "Openet",
+				"by":"",
+				"time":"3:30pm",
+				"place": {
+					"id": "",
+					"map": ""
+				},
+				"description": "Openet"
+			},
+			{
+				"name":"Coding Competition",
+				"by":"",
+				"time": "4pm",
+				"place": {
+					"id": "",
+					"map": ""
+				},
+				"description": "Prove your skills"
+			},
+			{
+				"name": "nuBar",
+				"by":"",
+				"time":"12pm",
+				"place": {
+					"id": "",
+					"map": ""
+				},
+				"description": "Lets go!"
+			},
+			{
+				"name": "Prizegiving",
+				"by":"",
+				"time":"12pm",
+				"place": {
+					"id": "",
+					"map": ""
+				},
+				"description": "Rewards for the competition"
+			}
+		]
+	},
+	{
+		"day": "Thursday",
+		"description": "Google",
+		"events": [
+			{
+				"name":"Linear Algebra",
+				"by":"",
+				"time": "1pm",
+				"place": {
+					"id": "",
+					"map": ""
+				},
+				"description": "What?"
+			},
+			{
+				"name": "Lunch",
+				"by":"",
+				"time":"2:30pm",
+				"place": {
+					"id": "",
+					"map": ""
+				},
+				"description": "Eat"
+			},
+			{
+				"name":"Internet of Things",
+				"by":"",
+				"time": "2:30pm",
+				"place": {
+					"id": "",
+					"map": ""
+				},
+				"description": "Again"
+			},
+			{
+				"name": "Building Reliable Large-Scale Distributed Systems",
+				"by":"",
+				"time":"12pm",
+				"place": {
+					"id": "",
+					"map": ""
+				},
+				"description": "How-to"
+			},
+			{
+				"name": "Expecting the Unexpected",
+				"by":"",
+				"time":"12pm",
+				"place": {
+					"id": "",
+					"map": ""
+				},
+				"description": "Google DIRT training"
+			},
+			{
+				"name": "Close Networking Session",
+				"by":"",
+				"time":"17pm",
+				"place": {
+					"id": "",
+					"map": ""
+				},
+				"description": "End of Networking"
+			}
+		]
+	},
+	{
+		"day": "Friday",
+		"description": "AOL",
+		"events": [
+			{
+				"name":"Associate Talks",
+				"by":"",
+				"time": "1pm",
+				"place": {
+					"id": "",
+					"map": ""
+				},
+				"description": "Old members"
+			},
+			{
+				"name": "The Architecture of Online Ad Delivery",
+				"by":"",
+				"time":"2:30pm",
+				"place": {
+					"id": "",
+					"map": ""
+				},
+				"description": "Ads"
+			},
+			{
+				"name":"Introduction to Erlang in the context of a Real Time Advertising Auction",
+				"by":"",
+				"time": "2:30pm",
+				"place": {
+					"id": "QG22",
+					"map": ""
+				},
+				"description": "Real time"
+			},
+			{
+				"name": "Overview of Aol’s open source SimpleReact library for Java 8",
+				"by":"",
+				"time":"12pm",
+				"place": {
+					"id": "",
+					"map": ""
+				},
+				"description": "Erlang"
+			},
+			{
+				"name": "Clean Code - Join the Revolution!",
+				"by":"",
+				"time":"12pm",
+				"place": {
+					"id": "",
+					"map": ""
+				},
+				"description": "Clean Code"
+			},
+			{
+				"name": "Continuous Integration/Continuous Deployment (CI/CD)",
+				"by":"",
+				"time":"17pm",
+				"place": {
+					"id": "",
+					"map": ""
+				},
+				"description": "CI|CD"
+			}
+		]
+	}
+]
