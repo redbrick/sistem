@@ -24,6 +24,11 @@ video {
 	margin-bottom: 5vh;
 }
 
+.day-name {
+	width: auto;
+	display: inline;
+}
+
 .time {
 	float: left;
 	display: inline-block;

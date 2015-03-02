@@ -114,7 +114,7 @@ function loadEvents(days){
 		var ul = day.day+"-events";
 		var de = $('<div id="'+day.day+'" class="container day"></div>').appendTo(ce);
 
-		de.append('<h4 class="tooltipped" data-position="left" data-tooltip="'+day.description+'">'+day.day+"</h3>");
+		de.append('<h4 class="tooltipped day-name" data-position="right" data-tooltip="'+day.description+'">'+day.day+"</h4>");
 
 		de.append('<ul id="'+ul+'"class="collapsible" data-collepsible="accordion"></ul>');
 
