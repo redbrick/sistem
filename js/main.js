@@ -154,12 +154,11 @@ function loadEvents(days){
 	});
 
 	$('ul').each( function ( c ){
-		$('.collapsible-header', this).click( function (){
-			$('.collapsible-header').each( function(){
-				$(this).css({'background-color': 'rgb(255, 255, 255)'});
-			});
+		$('.collapsible-header', this).click( function(){
+			$('.collapsible-header').not(this).css({'background-color': 'rgb(255, 255, 255)'});
 			var col = ($(this).css('background-color') == 'rgb(255, 255, 255)') ? colors[(v+c)%5] : 'rgb(255, 255, 255)';
 			$(this).css({'background-color': col});
+			
 		});
 	});
 }
