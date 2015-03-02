@@ -35,9 +35,15 @@ var colors = ['#f44336', '#009688', '#4caf50', '#ffc107', '#e91e63'];
 
 // Get the current time and the time TechWeek starts at;
 var now = (new Date()).getTime();
-var start = (new Date("2015-03-09T10:00:00"));
+var start = (new Date("2015-03-09T12:00:00"));
 var liveActive = false;
 var liveShown = false;
+
+// Set the constants for the amount of time in each time period
+var _second = 1000;
+var _minute = _second * 60;
+var _hour = _minute * 60;
+var _day = _hour * 24;
 
 // setInterval allows you to do certain action every period of time (like cronjob)
 setInterval(function(){
@@ -66,10 +72,7 @@ setInterval(function(){
 
 	var dist = start - now;
 
-	var _second = 1000;
-	var _minute = _second * 60;
-	var _hour = _minute * 60;
-	var _day = _hour * 24;
+	
 
 	var days = Math.floor(dist / _day);
 	var hours = Math.floor( (dist % _day) / _hour );
@@ -83,8 +86,10 @@ setInterval(function(){
 
 	$('#countdown .counter').html(str);
 
+// Set the time of the interval, in ms, so 1000 (1s)
 },1000);
 
+// Show the livefeed
 function showLive(){
 	if(!liveShown){
 		$('#countdown').hide(400, function(){
@@ -99,7 +104,7 @@ function showLive(){
 	
 }
 
-
+// Load the events from the file and add them to the page
 function loadEvents(days){
 	var ce = $('.events');
 	for(var i = 0; i < days.length; i++){
@@ -142,15 +147,18 @@ function loadEvents(days){
 	
 
 	$('.collapsible').collapsible();
-    $('.tooltipped').tooltip({delay: 10});
+    	$('.tooltipped').tooltip({delay: 10});
 
-    $('.events .collapsible-header').each(function( ix ){
-    	$(this).css({height: 'initial', "line-height":"6vh"});
-    });
+	$('.events .collapsible-header').each(function( ix ){
+		$(this).css({height: 'initial', "line-height":"6vh"});
+	});
 
-    $('ul').each( function ( c ){
+	$('ul').each( function ( c ){
 		$('.collapsible-header', this).click( function (){
-			var col = ($(this).css('background-color') == 'rgb(255, 255, 255)') ? colors[(v+c)%5] : '#fff';
+			$('.collapsible-header').each( function(){
+				$(this).css({'background-color': 'rgb(255, 255, 255)'});
+			});
+			var col = ($(this).css('background-color') == 'rgb(255, 255, 255)') ? colors[(v+c)%5] : 'rgb(255, 255, 255)';
 			$(this).css({'background-color': col});
 		});
 	});
