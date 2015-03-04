@@ -123,14 +123,12 @@ function loadEvents(days){
 
 			var by = (event.by.length === 0) ? "" : "By: <i>" + event.by + "</i>";
 
-			$('.events').append('<div class="modal" id="'+day.day.j+'">'+event.place.map+'</div>');
-
 			$("#"+ul).append(
 				"<li>"+
 					"<div class='collapsible-header'>" +
 						"<div class='time'>"+ event.time + "</div>" +
 						"<div class='event'>" + event.name + "</div>" +
-						"<a class='place waves-effect modal-trigger' href='#"+day.day+j+"'>" + event.place.id + "</a>" +
+						"<div class='place'>" + event.place.id + "</div>" +
 					"</div>" +
 					"<div class='collapsible-body'>" +
 						"<p>" + by +"</by>"+
@@ -150,7 +148,12 @@ function loadEvents(days){
     	$('.tooltipped').tooltip({delay: 10});
 
 	$('.events .collapsible-header').each(function( ix ){
-		$(this).css({height: 'initial', "line-height":"6vh"});
+		$(this).css({
+			height: 'initial', 
+			'line-height': "1.5rem", 
+			"padding": "1em",
+			"-webkit-transition":"all 0.2s"
+		});
 	});
 
 	$('ul').each( function ( c ){
