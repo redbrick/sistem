@@ -35,6 +35,7 @@ video {
 	display: inline-block;
 	font-size: 1.5vh;
 	width: 15%;
+	max-width: 5em;
 }
 
 .event {
