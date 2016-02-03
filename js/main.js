@@ -1,8 +1,8 @@
 // We wait for the document to finish loading
 $(document).ready( function(){
-	
+
 	// Get the event list from JSON (because JSON is nice) and send data to loadEvents function.
-	// This call is anynchronous, meaning it will display the data once the JSON is loaded, 
+	// This call is anynchronous, meaning it will display the data once the JSON is loaded,
 	// but the code continues to execute in the background
 	$.getJSON('events.json', function(data){ loadEvents(data);});
 
@@ -17,12 +17,12 @@ $(document).ready( function(){
 // 		localStorage allows you to store values in the client side. Its like cookies
 //		but they don't get send to the server
 //		1. If 'visited' is already defined:
-//			a. get the 'visited' and convert it to a number (+) since 
+//			a. get the 'visited' and convert it to a number (+) since
 //			   localStorage stores it as a string
 //			b. Add +1 to it
 //		2. If 'visited' is not defined (null), set it to 1, since you are on the website
 //	   	   right now.
-//		3. Assign the value you chose back to the 'visited' in localStorage 
+//		3. Assign the value you chose back to the 'visited' in localStorage
 localStorage['visited'] = localStorage['visited'] ? +localStorage['visited']+1 : 1;
 
 // Assign 'visited' to variable v, because its shorter to write, and will not require
@@ -35,7 +35,7 @@ var colors = ['#f44336', '#009688', '#4caf50', '#ffc107', '#e91e63'];
 
 // Get the current time and the time TechWeek starts at;
 var now = (new Date()).getTime();
-var start = (new Date("2015-03-09T12:00:00"));
+var start = (new Date("2016-02-15T12:00:00"));
 var liveActive = false;
 var liveShown = false;
 
@@ -72,7 +72,7 @@ setInterval(function(){
 
 	var dist = start - now;
 
-	
+
 
 	var days = Math.floor(dist / _day);
 	var hours = Math.floor( (dist % _day) / _hour );
@@ -97,11 +97,11 @@ function showLive(){
 				$('video').height(0);
 				$("video").animate({height: $('video').width() * (9 / 16), display: "block"}, 1000);
 			});
-			
+
 		});
 		liveShown = true;
 	}
-	
+
 }
 
 // Load the events from the file and add them to the page
@@ -132,7 +132,7 @@ function loadEvents(days){
 					"</div>" +
 					"<div class='collapsible-body'>" +
 						"<p>" + by +"</by>"+
-						"<p>" + event.description + "</p>" + 
+						"<p>" + event.description + "</p>" +
 					"</div>" +
 				"</li>"
 			);
@@ -142,15 +142,15 @@ function loadEvents(days){
 	$('h4').each( function( c ){
 		$(this).css({color: colors[(v+c) % 5]});
 	});
-	
+
 
 	$('.collapsible').collapsible();
     	$('.tooltipped').tooltip({delay: 10});
 
 	$('.events .collapsible-header').each(function( ix ){
 		$(this).css({
-			height: 'initial', 
-			'line-height': "1.5rem", 
+			height: 'initial',
+			'line-height': "1.5rem",
 			"padding": "1em",
 			"-webkit-transition":"all 0.2s"
 		});
@@ -162,7 +162,7 @@ function loadEvents(days){
 			$('.collapsible-header', all).not(this).css({'background-color': 'rgb(255, 255, 255)'});
 			var col = ($(this).css('background-color') == 'rgb(255, 255, 255)') ? colors[(v+c)%5] : 'rgb(255, 255, 255)';
 			$(this).css({'background-color': col});
-			
+
 		});
 	});
 }
