@@ -202,13 +202,22 @@
 		}, {
 			"name": "An evolution of Automation",
 			"by": "John Looney",
-			"time": "1:00pm",
+			"time": "1:20pm",
 			"place": {
 				"id": "The Mezz",
 				"map": ""
 			},
 			"description": " In software engineering, it is rare for the final version of a solution to be decided before implementation starts.Everything changes;engineers, experience, problems faced, and lessons learned from failure.This talk will explore why it 's important to try many different avenues, to fully understand the problem space, before being sure that a solution is optimal."
 		}, {
+			"name": "Designing Large Scale Distributed Systems",
+			"by": "John Looney",
+			"time": "12:40pm",
+			"place": {
+				"id": "The Mezz",
+				"map": ""
+			},
+			"description": "This talk will cover some very high-level principles for distributed system design."
+		},{
 			"name": "Lunch",
 			"by": "",
 			"time": "2:00pm",
@@ -229,7 +238,7 @@
 		}, {
 			"name": "10 Practical Tips for Writing an Attention-Getting CV \n Interviewing at Google",
 			"by": "Rebecca O'Farrell/Anam Acktar, Ryan Thomas and Graham Poulter",
-			"time": "4:00pm",
+			"time": "3:40pm",
 			"place": {
 				"id": "The Mezz",
 				"map": ""
@@ -238,7 +247,7 @@
 		}, {
 			"name": "Google Intern Panel",
 			"by": "Google",
-			"time": "4:30pm",
+			"time": "4:20pm",
 			"place": {
 				"id": "The Mezz",
 				"map": ""
