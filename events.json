@@ -20,14 +20,14 @@
 			},
 			"description": "To Be Announced"
 		}, {
-			"name": "To Be Announced",
-			"by": "To Be Announced",
+			"name": "Tales of success o.O",
+			"by": " Terrence Bolt & Wojciech Bednarzak - Redbrick Admins",
 			"time": "1:00pm",
 			"place": {
 				"id": "The Mezz",
 				"map": ""
 			},
-			"description": "To Be Announced"
+			"description": "No, we're not lying, we've made some huge progress since the Tales of Fail last year. We'll be talking about Redbrick 2.0, what we've done to date and what we have left to do. "
 		}, {
 			"name": "Lunch",
 			"by": "",
@@ -56,14 +56,14 @@
 			},
 			"description": ""
 		}, {
-			"name": "OpenStack: an Intro",
-			"by": "Graham Hayes",
+			"name": "OpenStack: An Introduction",
+			"by": "Graham Hayes - Openstack \'Designate\' Project Team Leader",
 			"time": "5:00pm",
 			"place": {
 				"id": "The Mezz",
 				"map": ""
 			},
-			"description": "An over of what OpenStack is, and how you can use it, I will cover the main projects available in OpenStack, what they do, and how they link together. I will also cover how you can get involved"
+			"description": "An overview of what OpenStack is, and how you can use it. I will cover the main projects available in OpenStack; what they do, and how they link together. I will also tell how you can get involved and contribute to the OpenStack project."
 		}]
 	},
 
@@ -71,8 +71,8 @@
 		"day": "Tuesday",
 		"description": "RB & Associates",
 		"events": [{
-			"name": "Citrix",
-			"by": "Nicholas Connolly",
+			"name": "Citrix Workspace Cloud",
+			"by": "Nicholas Connolly - Citrix",
 			"time": "12:00pm",
 			"place": {
 				"id": "The Mezz",
@@ -81,13 +81,13 @@
 			"description": "Citrix Workspace Cloud (CWC) is a serviced-based product to deliver workspaces. Citrix describes this as “a cloud-based control plane that enables partners and customers to unify, secure and deliver workspace services"
 		}, {
 			"name": "Prometheus: A Next Generation Monitoring System",
-			"by": "Brian Brazil",
+			"by": "Brian Brazil - Robust Perception",
 			"time": "1:00pm",
 			"place": {
 				"id": "The Mezz",
 				"map": ""
 			},
-			"description": "Prometheus is a scaleable, reliabile, easy to use and powerful monitoring system. This talk will look at the ideas behind it and how you can take advantage of them. Since publically launching the open source project over a year ago, over 100 companies have started relying on it and there are over 250 contributers to the codebase."
+			"description": "Prometheus is a scalable, reliabile, easy to use and powerful monitoring system. This talk will look at the ideas behind it and how you can take advantage of them. Since publicly launching the open source project, over a year ago, over 100 companies have now rely on it and to date there are over 250 contributers to the codebase."
 		}, {
 			"name": "Lunch",
 			"by": "",
@@ -116,14 +116,14 @@
 			},
 			"description": "Talks given by associate Redbrick members"
 		}, {
-			"name": "Hackers in the Movie",
-			"by": "Damian Gordan",
+			"name": "Hackers in the Movies",
+			"by": "Damian Gordoni - DIT Universal Design RG",
 			"time": "5:00pm",
 			"place": {
 				"id": "The Mezz",
 				"map": ""
 			},
-			"description": "Damian's talk will look at the portrayal of computer hackers in the  movies, how they are represented in terms of the age, gender,  profession, etc. and how this portrayal has evolved over the decades,  and it will also will look at the depiction of the types of things  hackers can do in the movies as opposed to real life"
+			"description": "Damian's talk will look at the trope that is the movie computer hacker and how Hollywood portrays them. What do hackerse look like? How old are they? What's their day job and how did this 'stereotype' evolve over time? Damian will also talk about what movie hackers can do as opposed to what can be done in real life"
 		}]
 	},
 
@@ -159,7 +159,7 @@
 			"description": "Lunch"
 		}, {
 			"name": "Imprecise Network Monitoring Tools",
-			"by": "Brian Nisbet",
+			"by": "Brian Nisbet - HEAnet (Network Operations Manager)",
 			"time": "3:00pm",
 			"place": {
 				"id": "The Mezz",
@@ -177,7 +177,7 @@
 			"description": "GO"
 		}, {
 			"name": "Working Together: Le and Private Sector Botnet Takedowns",
-			"by": "Anev",
+			"by": "Alan Neville (anev) - Symantec, Threat Intelligence Analyst",
 			"time": "5:00pm",
 			"place": {
 				"id": "The Mezz",
