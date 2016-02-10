@@ -98,25 +98,25 @@
 			},
 			"description": "Lunch Time!"
 		}, {
-			"name": "TBC",
+			"name": "To Be Announced",
 			"by": "",
 			"time": "3:00pm",
 			"place": {
 				"id": "The Mezz",
 				"map": ""
 			},
-			"description": "Talks given by old RedBrick members"
+			"description": "Talks given by associate Redbrick members"
 		}, {
-			"name": "TBC",
+			"name": "To Be Announced",
 			"by": "",
 			"time": "4:00pm",
 			"place": {
 				"id": "The Mezz",
 				"map": ""
 			},
-			"description": "Talks given by old RedBrick members"
+			"description": "Talks given by associate Redbrick members"
 		}, {
-			"name": "Hakers in the Movie",
+			"name": "Hackers in the Movie",
 			"by": "Damian Gordan",
 			"time": "5:00pm",
 			"place": {
@@ -176,7 +176,7 @@
 			},
 			"description": "GO"
 		}, {
-			"name": "WORKING TOGETHER: LE AND PRIVATE SECTOR BOTNET TAKEDOWNS",
+			"name": "Working Together: Le and Private Sector Botnet Takedowns",
 			"by": "Anev",
 			"time": "5:00pm",
 			"place": {
@@ -218,32 +218,32 @@
 			},
 			"description": "Eat"
 		}, {
-			"name": "Interviewing and working with Google",
+			"name": "Expecting the Unexpected",
 			"by": "Ryan Thomas",
 			"time": "3:00pm",
 			"place": {
 				"id": "The Mezz",
 				"map": ""
 			},
-			"description": "A review of opportunities to work and intern with Google, as well as some tips on writing a great CV and doing a great interview."
+			"description": "Things break - all the time. At Google scale we're statistically certain that at any given time, somewhere, something is broken. We still have deliver a great service to users. By deliberately breaking things in a controlled fashion, Google's Disaster Readiness Testing is one of the methods we use to objectively test our ability to handle failure."
 		}, {
-			"name": "To Be Announced",
-			"by": "Google",
+			"name": "10 Practical Tips for Writing an Attention-Getting CV \n Interviewing at Google",
+			"by": "Rebecca O'Farrell/Anam Acktar, Ryan Thomas and Graham Poulter",
 			"time": "4:00pm",
 			"place": {
 				"id": "The Mezz",
 				"map": ""
 			},
-			"description": ""
+			"description": "Learn tips from members of Google's recruiting team about how to put together a memorable CV. Two of our Site Reliability Engineers will also do a demo coding interview and will provide tips on how to approach the process."
 		}, {
-			"name": "To Be Announced",
+			"name": "Google Intern Panel",
 			"by": "Google",
-			"time": "5:00pm",
+			"time": "4:30pm",
 			"place": {
 				"id": "The Mezz",
 				"map": ""
 			},
-			"description": ""
+			"description": "Hear from past and future Google interns currently studying at DCU about their experiences in this panel discussion."
 		}]
 	},
 
