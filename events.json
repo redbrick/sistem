@@ -1,290 +1,300 @@
-[
-	{
+[{
 		"day": "Monday",
-		"description": "Amazon",
-		"events": [
-			{
-				"name":"Opening Event",
-				"by":"",
-				"time": "10am",
-				"place": {
-					"id": "L101",
-					"map": "Somewhere in DCU"
-				},
-				"description": "Opening of TechWeek 2015"
+		"description": "HubSpot",
+		"events": [{
+			"name": "Opening Event",
+			"by": "Redbrick DCU's Computer Networking Society",
+			"time": "11:45am",
+			"place": {
+				"id": "The Mezz",
+				"map": "Somewhere in DCU"
 			},
-			{
-				"name": "Amazon CloudWatch",
-				"by":"Amazon",
-				"time":"12pm",
-				"place": {
-					"id": "",
-					"map": ""
-				},
-				"description": "Amazon CloudWatch"
+			"description": "Opening of TechWeek 2015"
+		}, {
+			"name": "To Be Announced",
+			"by": "To Be Announced",
+			"time": "12:00pm",
+			"place": {
+				"id": "The Mezz",
+				"map": ""
 			},
-			{
-				"name": "Internet of Things",
-				"by":"",
-				"time":"1pm",
-				"place": {
-					"id": "",
-					"map": ""
-				},
-				"description" : "Internet of Things"
+			"description": "To Be Announced"
+		}, {
+			"name": "To Be Announced",
+			"by": "To Be Announced",
+			"time": "1:00pm",
+			"place": {
+				"id": "The Mezz",
+				"map": ""
 			},
-			{
-				"name": "Lunch",
-				"by":"",
-				"time": "2pm",
-				"place": {
-					"id": "",
-					"map": ""
-				},
-				"description": "Time for a break"
+			"description": "To Be Announced"
+		}, {
+			"name": "Lunch",
+			"by": "",
+			"time": "2:00pm",
+			"place": {
+				"id": "The Mezz",
+				"map": ""
 			},
-			{
-				"name": "Project Workshops with Amazon SDEs",
-				"by":"",
-				"time": "3pm",
-				"place": {
-					"id": "",
-					"map": ""
-				},
-				"description": "Amazon"
+			"description": "Time for a break"
+		}, {
+			"name": "To Be Announced",
+			"by": "To Be Announced",
+			"time": "3:00pm",
+			"place": {
+				"id": "The Mezz",
+				"map": ""
 			},
-			{
-				"name": "Colin Whittaker",
-				"by":"",
-				"time": "4pm",
-				"place": {
-					"id": "",
-					"map": ""
-				},
-				"description": "Colin Whittaker"
+			"description": " Another Project"
+		}, {
+			"name": "To Be Announced",
+			"by": "To Be Announced",
+			"time": "4:00pm",
+			"place": {
+				"id": "The Mezz",
+				"map": ""
 			},
-			{
-				"name": "Networking",
-				"by":"",
-				"time": "3pm",
-				"place": {
-					"id": "",
-					"map": ""
-				},
-				"description": "Networking"
-			}
-		]
+			"description": ""
+		}, {
+			"name": "OpenStack: an Intro",
+			"by": "Graham Hayes",
+			"time": "5:00pm",
+			"place": {
+				"id": "The Mezz",
+				"map": ""
+			},
+			"description": "An over of what OpenStack is, and how you can use it, I will cover the main projects available in OpenStack, what they do, and how they link together. I will also cover how you can get involved"
+		}]
 	},
+
 	{
 		"day": "Tuesday",
-		"description": "RB & Intercom",
-		"events": [
-			{
-				"name":"Associate Talks", 
-				"by":"",
-				"time": "10am",
-				"place": {
-					"id": "",
-					"map": ""
-				},
-				"description": "Talks given by old RedBrick members"
+		"description": "RB & Associates",
+		"events": [{
+			"name": "Citrix",
+			"by": "Nicholas Connolly",
+			"time": "12:00pm",
+			"place": {
+				"id": "The Mezz",
+				"map": ""
 			},
-			{
-				"name": "Intercom",
-				"by":"","time":"12pm",
-				"place": {
-					"id": "",
-					"map": ""
-				},
-				"description": "Intercom talks"
-			}
-		]
+			"description": "Citrix Workspace Cloud (CWC) is a serviced-based product to deliver workspaces. Citrix describes this as “a cloud-based control plane that enables partners and customers to unify, secure and deliver workspace services"
+		}, {
+			"name": "Prometheus: A Next Generation Monitoring System",
+			"by": "Brian Brazil",
+			"time": "1:00pm",
+			"place": {
+				"id": "The Mezz",
+				"map": ""
+			},
+			"description": "Prometheus is a scaleable, reliabile, easy to use and powerful monitoring system. This talk will look at the ideas behind it and how you can take advantage of them. Since publically launching the open source project over a year ago, over 100 companies have started relying on it and there are over 250 contributers to the codebase."
+		}, {
+			"name": "Lunch",
+			"by": "",
+			"time": "2:00pm",
+			"place": {
+				"id": "The Mezz",
+				"map": ""
+			},
+			"description": "Lunch Time!"
+		}, {
+			"name": "To Be Announced",
+			"by": "",
+			"time": "3:00pm",
+			"place": {
+				"id": "The Mezz",
+				"map": ""
+			},
+			"description": "Talks given by associate Redbrick members"
+		}, {
+			"name": "To Be Announced",
+			"by": "",
+			"time": "4:00pm",
+			"place": {
+				"id": "The Mezz",
+				"map": ""
+			},
+			"description": "Talks given by associate Redbrick members"
+		}, {
+			"name": "Hackers in the Movie",
+			"by": "Damian Gordan",
+			"time": "5:00pm",
+			"place": {
+				"id": "The Mezz",
+				"map": ""
+			},
+			"description": "Damian's talk will look at the portrayal of computer hackers in the  movies, how they are represented in terms of the age, gender,  profession, etc. and how this portrayal has evolved over the decades,  and it will also will look at the depiction of the types of things  hackers can do in the movies as opposed to real life"
+		}]
 	},
+
 	{
 		"day": "Wednesday",
-		"description": "Openet",
-		"events": [
-			{
-				"name":"Admin Tales of Fail",
-				"by":"",
-				"time": "2:30pm",
-				"place": {
-					"id": "",
-					"map": ""
-				},
-				"description": "How Redbrick was broken, but then fixed by our amazing admins"
+		"description": "HEAnet",
+		"events": [{
+			"name": "HEAnet",
+			"by": "",
+			"time": "12:00pm",
+			"place": {
+				"id": "The Mezz",
+				"map": ""
 			},
-			{
-				"name": "Openet",
-				"by":"",
-				"time":"3:30pm",
-				"place": {
-					"id": "",
-					"map": ""
-				},
-				"description": "Openet"
+			"description": "HEAnet"
+		}, {
+			"name": "HEAnet",
+			"by": "",
+			"time": "1:00pm",
+			"place": {
+				"id": "The Mezz",
+				"map": ""
 			},
-			{
-				"name":"Coding Competition",
-				"by":"",
-				"time": "4pm",
-				"place": {
-					"id": "",
-					"map": ""
-				},
-				"description": "Prove your skills"
+			"description": "HEAnet"
+		}, {
+			"name": "Lunch",
+			"by": "",
+			"time": "2:00pm",
+			"place": {
+				"id": "The Mezz",
+				"map": ""
 			},
-			{
-				"name": "nuBar",
-				"by":"",
-				"time":"12pm",
-				"place": {
-					"id": "",
-					"map": ""
-				},
-				"description": "Lets go!"
+			"description": "Lunch"
+		}, {
+			"name": "Imprecise Network Monitoring Tools",
+			"by": "Brian Nisbet",
+			"time": "3:00pm",
+			"place": {
+				"id": "The Mezz",
+				"map": ""
 			},
-			{
-				"name": "Prizegiving",
-				"by":"",
-				"time":"12pm",
-				"place": {
-					"id": "",
-					"map": ""
-				},
-				"description": "Rewards for the competition"
-			}
-		]
+			"description": "Any problem can have multiple causes and a vital part of troubleshooting is to gather as much data as possible. However not all problems (or solutions) are evident from deployed monitoring tools. Substantial data can be gleaned from social networking sites such as Twitter and Facebook and crowdsourcing your info can really help when local contacts can't be reached. This talk is liberally dosed with caveats and searching Instagram for pictures of dug up fibre should never be used in preference to well configured network monitoring tools! "
+		}, {
+			"name": "Intro To GoLang",
+			"by": "Voy",
+			"time": "4:00pm",
+			"place": {
+				"id": "The Mezz",
+				"map": ""
+			},
+			"description": "GO"
+		}, {
+			"name": "Working Together: Le and Private Sector Botnet Takedowns",
+			"by": "Anev",
+			"time": "5:00pm",
+			"place": {
+				"id": "The Mezz",
+				"map": ""
+			},
+			"description": "Computer criminals regularly construct large distributed attack networks known as botnets.These networks are comprised of hijacked computers that an attacker can use to send spam, commit financial fraud or launch cyber - attacks.This talk aims to describe the approaches of botnet takedowns from the perspective of law enforcement agencies and the AV industry using examples from recent take - downs and discusses success stories when private and public sect Anev will go through case study of take down effort for zeroaccess botnet which was done by symantec and give an example of the gameoverzeus botnet takedown we conducted in conjunction with the FBI and the UK cyber crime unit and show the difference it made working with LE."
+		}]
 	},
+
 	{
 		"day": "Thursday",
 		"description": "Google",
-		"events": [
-			{
-				"name":"Linear Algebra",
-				"by":"",
-				"time": "1pm",
-				"place": {
-					"id": "",
-					"map": ""
-				},
-				"description": "What?"
+		"events": [{
+			"name": "The Challenges of Machine Learning at Scale",
+			"by": "Graham Poulter",
+			"time": "12:00pm",
+			"place": {
+				"id": "The Mezz",
+				"map": ""
 			},
-			{
-				"name": "Lunch",
-				"by":"",
-				"time":"2:30pm",
-				"place": {
-					"id": "",
-					"map": ""
-				},
-				"description": "Eat"
+			"description": "Aoife runs a large website that shows ads alongside its search results and page contents, and wants to do better by users by responding only with the ads they are likely to click given the request they made - a task perfectly suited to machine learning. However, Aoife quickly runs into scaling problems: those models have to handle tens of thousands of requests per second for both learning and prediction, there are billions of different features in so much data, and all the while she wants models to stay up to date and run lots of them to figure out which ones make the best predictions. Let's follow Aoife as she begins with the simplest possible system and explore ways in she might design the system to overcome these scaling issues."
+		}, {
+			"name": "Designing Large Scale Distributed Systems",
+			"by": "Remigiusz Modrzejewski",
+			"time": "12:40pm",
+			"place": {
+				"id": "The Mezz",
+				"map": ""
 			},
-			{
-				"name":"Internet of Things",
-				"by":"",
-				"time": "2:30pm",
-				"place": {
-					"id": "",
-					"map": ""
-				},
-				"description": "Again"
+			"description": "This talk will cover some very high-level principles for distributed system design."
+		}, {
+			"name": "An evolution of Automation",
+			"by": "John Looney",
+			"time": "1:20pm",
+			"place": {
+				"id": "The Mezz",
+				"map": ""
 			},
-			{
-				"name": "Building Reliable Large-Scale Distributed Systems",
-				"by":"",
-				"time":"12pm",
-				"place": {
-					"id": "",
-					"map": ""
-				},
-				"description": "How-to"
+			"description": " In software engineering, it is rare for the final version of a solution to be decided before implementation starts.Everything changes;engineers, experience, problems faced, and lessons learned from failure.This talk will explore why it 's important to try many different avenues, to fully understand the problem space, before being sure that a solution is optimal."
+		}, {
+			"name": "Lunch",
+			"by": "",
+			"time": "2:00pm",
+			"place": {
+				"id": "The Mezz",
+				"map": ""
 			},
-			{
-				"name": "Expecting the Unexpected",
-				"by":"",
-				"time":"12pm",
-				"place": {
-					"id": "",
-					"map": ""
-				},
-				"description": "Google DIRT training"
+			"description": "Eat"
+		}, {
+			"name": "Expecting the Unexpected",
+			"by": "Ryan Thomas",
+			"time": "3:00pm",
+			"place": {
+				"id": "The Mezz",
+				"map": ""
 			},
-			{
-				"name": "Close Networking Session",
-				"by":"",
-				"time":"17pm",
-				"place": {
-					"id": "",
-					"map": ""
-				},
-				"description": "End of Networking"
-			}
-		]
+			"description": "Things break - all the time. At Google scale we're statistically certain that at any given time, somewhere, something is broken. We still have deliver a great service to users. By deliberately breaking things in a controlled fashion, Google's Disaster Readiness Testing is one of the methods we use to objectively test our ability to handle failure."
+		}, {
+			"name": "10 Practical Tips for Writing an Attention-Getting CV \n Interviewing at Google",
+			"by": "Rebecca O'Farrell/Anam Acktar, Ryan Thomas and Graham Poulter",
+			"time": "3:40pm",
+			"place": {
+				"id": "The Mezz",
+				"map": ""
+			},
+			"description": "Learn tips from members of Google's recruiting team about how to put together a memorable CV. Two of our Site Reliability Engineers will also do a demo coding interview and will provide tips on how to approach the process."
+		}, {
+			"name": "Google Intern Panel",
+			"by": "Google",
+			"time": "4:20pm",
+			"place": {
+				"id": "The Mezz",
+				"map": ""
+			},
+			"description": "Hear from past and future Google interns currently studying at DCU about their experiences in this panel discussion."
+		}]
 	},
+
 	{
 		"day": "Friday",
-		"description": "AOL",
-		"events": [
-			{
-				"name":"Associate Talks",
-				"by":"",
-				"time": "1pm",
+		"description": "RB & Associate",
+		"events": [{
+				"name": "​ 'N' things we learned about deploying cloud applications",
+				"by": "Tony Ayres",
+				"time": "12:00pm",
 				"place": {
-					"id": "",
+					"id": "The Mezz",
 					"map": ""
 				},
-				"description": "Old members"
-			},
-			{
-				"name": "The Architecture of Online Ad Delivery",
-				"by":"",
-				"time":"2:30pm",
+				"description": "The trials and tribulations of building and deploying software on a cloud platform(AWS).A discussion of the silly, simple mistakes that cause you to have to work the weekend...and how to avoid them."
+			}, {
+				"name": "Competitive Programming",
+				"by": "Cian Ruaine and Noah Donnelly  ",
+				"time": "1:00pm",
 				"place": {
-					"id": "",
+					"id": "The Mezz",
 					"map": ""
 				},
-				"description": "Ads"
-			},
-			{
-				"name":"Introduction to Erlang in the context of a Real Time Advertising Auction",
-				"by":"",
-				"time": "2:30pm",
+				"description": "programming is crazy"
+			}, {
+				"name": "How to Build a Web App in ReactJS",
+				"by": "Cian McMahon & Rob Campion",
+				"time": "2:00pm",
 				"place": {
-					"id": "QG22",
+					"id": "The Mezz",
 					"map": ""
 				},
-				"description": "Real time"
-			},
-			{
-				"name": "Overview of Aol’s open source SimpleReact library for Java 8",
-				"by":"",
-				"time":"12pm",
+				"description": "You’ll get an intro to what React is, how to get started with it, and also learn about React Router and Redux"
+			}, {
+				"name": "Lunch",
+				"by": "",
+				"time": "3:00pm",
 				"place": {
-					"id": "",
+					"id": "The Mezz",
 					"map": ""
 				},
-				"description": "Erlang"
-			},
-			{
-				"name": "Clean Code - Join the Revolution!",
-				"by":"",
-				"time":"12pm",
-				"place": {
-					"id": "",
-					"map": ""
-				},
-				"description": "Clean Code"
-			},
-			{
-				"name": "Continuous Integration/Continuous Deployment (CI/CD)",
-				"by":"",
-				"time":"17pm",
-				"place": {
-					"id": "",
-					"map": ""
-				},
-				"description": "CI|CD"
+				"description": ""
 			}
 		]
 	}
