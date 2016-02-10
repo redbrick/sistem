@@ -200,6 +200,15 @@
 			},
 			"description": "Aoife runs a large website that shows ads alongside its search results and page contents, and wants to do better by users by responding only with the ads they are likely to click given the request they made - a task perfectly suited to machine learning. However, Aoife quickly runs into scaling problems: those models have to handle tens of thousands of requests per second for both learning and prediction, there are billions of different features in so much data, and all the while she wants models to stay up to date and run lots of them to figure out which ones make the best predictions. Let's follow Aoife as she begins with the simplest possible system and explore ways in she might design the system to overcome these scaling issues."
 		}, {
+			"name": "Designing Large Scale Distributed Systems",
+			"by": "Remigiusz Modrzejewski",
+			"time": "12:40pm",
+			"place": {
+				"id": "The Mezz",
+				"map": ""
+			},
+			"description": "This talk will cover some very high-level principles for distributed system design."
+		}, {
 			"name": "An evolution of Automation",
 			"by": "John Looney",
 			"time": "1:20pm",
@@ -209,15 +218,6 @@
 			},
 			"description": " In software engineering, it is rare for the final version of a solution to be decided before implementation starts.Everything changes;engineers, experience, problems faced, and lessons learned from failure.This talk will explore why it 's important to try many different avenues, to fully understand the problem space, before being sure that a solution is optimal."
 		}, {
-			"name": "Designing Large Scale Distributed Systems",
-			"by": "John Looney",
-			"time": "12:40pm",
-			"place": {
-				"id": "The Mezz",
-				"map": ""
-			},
-			"description": "This talk will cover some very high-level principles for distributed system design."
-		},{
 			"name": "Lunch",
 			"by": "",
 			"time": "2:00pm",
