@@ -16,6 +16,21 @@ header h1 span {
 	font-weight: 300;
 }
 
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+header ul li {
+  float: left;
+  padding: 0 8px;
+}
+
 video {
 	width: 100%;
 }
@@ -68,12 +83,15 @@ ul {
 }
 
 #countdown .counter {
-	display: block;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-size: medium;
 }
 
 #countdown .counter span {
 	display: block;
-	font-size: 3vw;
+	font-size: 2em;
 }
 
 #livestream {
