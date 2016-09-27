@@ -15,8 +15,10 @@ The `main.js` file is also responsible for displaying the countdown and loading 
 ---
 
 ## Notes ##
-* When running the files locally, run it using a web server or you will have problems with Same-origin policy (because apparently different files with file:/// are on different protocols or something like that...).
-A simple solution is to run a simple Python webserver (which I used for development) inside your current work directory:
+* When running the files locally, run it using a web server or you will have problems with Same-origin policy.
+A simple solution is to run a simple Python webserver inside your current work directory:
 > `python -m SimpleHTTPServer`
+or
+> `python3 -m http.server`
 
 * If you break it, its not my fault. It works on my machine
