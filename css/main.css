@@ -97,3 +97,7 @@ ul {
 #livestream {
 	display: none;
 }
+
+#playlist {
+  display: block;
+}
