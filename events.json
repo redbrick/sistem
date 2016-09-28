@@ -1,23 +1,21 @@
-[
-  {
-		"day": "Monday",
-		"description": "Data",
-		"events": []
-	}, {
-		"day": "Tuesday",
-		"description": "Mobile Development",
-		"events": []
-	}, {
-		"day": "Wednesday",
-		"description": "Networks and IoT",
-		"events": []
-	}, {
-		"day": "Thursday",
-		"description": "STEM",
-		"events": []
-	}, {
-		"day": "Friday",
-		"description": "Lightning Talks",
-		"events": []
-	}
-]
+[{
+  "day": "Monday",
+  "description": "Data",
+  "events": []
+}, {
+  "day": "Tuesday",
+  "description": "Mobile Development",
+  "events": []
+}, {
+  "day": "Wednesday",
+  "description": "Networks and IoT",
+  "events": []
+}, {
+  "day": "Thursday",
+  "description": "STEM",
+  "events": []
+}, {
+  "day": "Friday",
+  "description": "Lightning Talks",
+  "events": []
+}]

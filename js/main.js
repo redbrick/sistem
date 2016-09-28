@@ -31,7 +31,7 @@ var colors = ['#f44336', '#009688', '#4caf50', '#ffc107', '#e91e63'];
 
 // Get the current time and the time TechWeek starts at;
 var now = (new Date()).getTime();
-var start = (new Date("2016-10-24T12:00:00"));
+var start = (new Date('2016-10-24T12:00:00'));
 var liveActive = false;
 var liveShown = false;
 
@@ -65,10 +65,10 @@ setInterval(function(){
   var mins = Math.floor( (dist % _hour) / _minute );
   var secs = Math.floor( (dist % _minute) / _second );
 
-  var str  = 	(days > 0) 		? "<span>" + days + " Days</span>" 		: "";
-  str +=		(hours > 0) 	? "<span>" + hours + " Hours</span>"	: "";
-  str +=		(mins > 0) 		? "<span>" + mins + " Minutes</span>"	: "";
-  str +=		"<span>" + secs + " Seconds</span>";
+  var str  = 	(days > 0) 		? '<span>' + days + ' Days</span>' 		: '';
+  str +=		(hours > 0) 	? '<span>' + hours + ' Hours</span>'	: '';
+  str +=		(mins > 0) 		? '<span>' + mins + ' Minutes</span>'	: '';
+  str +=		'<span>' + secs + ' Seconds</span>';
 
   $('#countdown .counter').html(str);
 }, 1000); // Set the time of the interval, in ms, so 1000 (1s)
@@ -79,7 +79,7 @@ function showLive(){
     $('#countdown').hide(400, function(){
       $('#livestream').show(0, function(){
         $('video').height(0);
-        $("video").animate({height: $('video').width() * (9 / 16), display: "block"}, 1000);
+        $('video').animate({height: $('video').width() * (9 / 16), display: 'block'}, 1000);
       });
     });
     liveShown = true;
@@ -91,28 +91,28 @@ function loadEvents(days){
   var ce = $('.events');
   for(var i = 0; i < days.length; i++){
     var day = days[i];
-    var ds = day.day+"-event";
-    var ul = day.day+"-events";
+    var ds = day.day+'-event';
+    var ul = day.day+'-events';
     var de = $('<div id="'+day.day+'" class="container day"></div>').appendTo(ce);
 
-    de.append('<h4 class="tooltipped day-name" data-position="right" data-tooltip="'+day.description+'">'+day.day+"</h4>");
+    de.append('<h4 class="tooltipped day-name" data-position="right" data-tooltip="'+day.description+'">'+day.day+'</h4>');
     de.append('<ul id="'+ul+'"class="collapsible" data-collepsible="accordion"></ul>');
 
     for(var j = 0; j < day.events.length; j++){
       var event = day.events[j];
-      var by = (event.by.length === 0) ? "" : "By: <i>" + event.by + "</i>";
-      $("#"+ul).append(
-        "<li>"+
-          "<div class='collapsible-header'>" +
-            "<div class='time'>"+ event.time + "</div>" +
-            "<div class='event'>" + event.name + "</div>" +
-            "<div class='place'>" + event.place.id + "</div>" +
-          "</div>" +
-          "<div class='collapsible-body'>" +
-            "<p>" + by +"</by>"+
-            "<p>" + event.description + "</p>" +
-          "</div>" +
-        "</li>"
+      var by = (event.by.length === 0) ? '' : 'By: <i>' + event.by + '</i>';
+      $('#'+ul).append(
+        '<li>'+
+          '<div class=\'collapsible-header\'>' +
+            '<div class=\'time\'>'+ event.time + '</div>' +
+            '<div class=\'event\'>' + event.name + '</div>' +
+            '<div class=\'place\'>' + event.place.id + '</div>' +
+          '</div>' +
+          '<div class=\'collapsible-body\'>' +
+            '<p>' + by +'</by>'+
+            '<p>' + event.description + '</p>' +
+          '</div>' +
+        '</li>'
       );
     }
   }
@@ -126,9 +126,9 @@ function loadEvents(days){
   $('.events .collapsible-header').each(function( ix ){
     $(this).css({
       height: 'initial',
-      'line-height': "1.5rem",
-      "padding": "1em",
-      "-webkit-transition":"all 0.2s"
+      'line-height': '1.5rem',
+      'padding': '1em',
+      '-webkit-transition':'all 0.2s'
     });
   });
 
