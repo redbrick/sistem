@@ -47,7 +47,7 @@ setInterval(function(){
   // Check is current time + 10 minutes smaller than the starting time
   if(now+1000*60*10 < start){
     // If it is, show the box and start counting down
-    $('#countdown').show(400);
+    $('.countdown').show(400);
   } else {
     liveActive = true;
     // Otherwise, show the livestream and abjust the height of it to be in
@@ -70,14 +70,14 @@ setInterval(function(){
   str +=		(mins > 0) 		? '<span>' + mins + ' Minutes</span>'	: '';
   str +=		'<span>' + secs + ' Seconds</span>';
 
-  $('#countdown .counter').html(str);
+  $('.countdown .countdown__counter').html(str);
 }, 1000); // Set the time of the interval, in ms, so 1000 (1s)
 
 // Show the livefeed
 function showLive(){
   if(!liveShown){
-    $('#countdown').hide(400, function(){
-      $('#livestream').show(0, function(){
+    $('.countdown').hide(400, function(){
+      $('.livestream').show(0, function(){
         $('video').height(0);
         $('video').animate({height: $('video').width() * (9 / 16), display: 'block'}, 1000);
       });
@@ -88,25 +88,22 @@ function showLive(){
 
 // Load the events from the file and add them to the page
 function loadEvents(days){
-  var ce = $('.events');
-  for(var i = 0; i < days.length; i++){
+  var ce = $('.card-container__events');
+  for(var i = 0; i < days.length; i++) {
     var day = days[i];
     var ds = day.day+'-event';
     var ul = day.day+'-events';
-    var de = $('<div id="'+day.day+'" class="container day"></div>').appendTo(ce);
+    var de = $('<li><div id="'+day.day+'" class="collapsible-header container day"><h5 class="day__title" data-position="right"><span class="day__title__bold">' + day.day + '</span> - ' + day.description + '</h5></div><div class="collapsible-body"><ul id="'+ul+'"class="collapsible sub-collapsible" data-collepsible="accordion"></div></ul>').appendTo(ce);
 
-    de.append('<h4 class="tooltipped day-name" data-position="right" data-tooltip="'+day.description+'">'+day.day+'</h4>');
-    de.append('<ul id="'+ul+'"class="collapsible" data-collepsible="accordion"></ul>');
-
-    for(var j = 0; j < day.events.length; j++){
+    for(var j = 0; j < day.events.length; j++) {
       var event = day.events[j];
       var by = (event.by.length === 0) ? '' : 'By: <i>' + event.by + '</i>';
       $('#'+ul).append(
         '<li>'+
-          '<div class=\'collapsible-header\'>' +
-            '<div class=\'time\'>'+ event.time + '</div>' +
-            '<div class=\'event\'>' + event.name + '</div>' +
-            '<div class=\'place\'>' + event.place.id + '</div>' +
+          '<div class=\'collapsible-header event-card\'>' +
+            '<div class=\'event-card__time\'>'+ event.time + '</div>' +
+            '<div class=\'event-card__event\'>' + event.name + '</div>' +
+            '<div class=\'event-card__place\'>' + event.place.id + '</div>' +
           '</div>' +
           '<div class=\'collapsible-body\'>' +
             '<p>' + by +'</by>'+
@@ -117,27 +114,10 @@ function loadEvents(days){
     }
   }
 
-  $('h4').each( function( c ){
+  $('h5').each( function( c ){
     $(this).css({color: colors[(v+c) % 5]});
   });
 
   $('.collapsible').collapsible();
   $('.tooltipped').tooltip({delay: 10});
-  $('.events .collapsible-header').each(function( ix ){
-    $(this).css({
-      height: 'initial',
-      'line-height': '1.5rem',
-      'padding': '1em',
-      '-webkit-transition':'all 0.2s'
-    });
-  });
-
-  $('ul').each( function ( c ){
-    var all = this;
-    $('.collapsible-header', all).click( function(){
-      $('.collapsible-header', all).not(this).css({'background-color': 'rgb(255, 255, 255)'});
-      var col = ($(this).css('background-color') == 'rgb(255, 255, 255)') ? colors[(v+c)%5] : 'rgb(255, 255, 255)';
-      $(this).css({'background-color': col});
-    });
-  });
 }

@@ -1,34 +1,45 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400);
+@import url(//fonts.googleapis.com/css?family=Roboto:100,300,400);
+
+@card-width: 624px;
+@large-phone: 560px;
 
 header {
   text-align: center;
 
-  h1 {
+  .title {
     margin: 0.5em 0;
     margin-bottom: 0.3em;
     font-size: 15vmin;
     font-weight: 100;
 
-    span {
+    &__colour {
       color: red;
       font-weight: 300;
     }
+
+    a {
+      color: black;
+    }
   }
 
-  ul {
+  .menu {
     list-style-type: none;
-    margin: 0;
+    margin: 8px 0;
     padding: 0;
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
-    li {
+    &__item {
       float: left;
       padding: 0 8px;
     }
   }
+}
+
+body {
+  background-color: #eee;
 }
 
 video {
@@ -36,33 +47,40 @@ video {
 }
 
 .day {
-  margin-top: 2vh;
-  margin-bottom: 5vh;
-  padding: 0;
+  margin-top: 1vh;
+
+  &__title {
+    width: auto;
+    display: inline;
+    font-weight: 300;
+
+    &__bold {
+      font-weight: 500;
+    }
+  }
 }
 
-.day-name {
-  width: auto;
-  display: inline;
-}
+.event-card {
+  display: flex;
+  &__time {
+    float: left;
+    display: inline-block;
+    font-size: 1.5vh;
+    width: 15%;
+    margin-right: 1em;
+    max-width: 5em;
+  }
 
-.time {
-  float: left;
-  display: inline-block;
-  font-size: 1.5vh;
-  width: 15%;
-  max-width: 5em;
-}
+  &__event {
+    display: inline-block;
+    width: 80%;
+  }
 
-.event {
-  display: inline-block;
-  width: 60%;
-}
-
-.place {
-  display: inline-block;
-  color: #000000;
-  float: right;
+  &__place {
+    display: inline-block;
+    color: #000000;
+    float: right;
+  }
 }
 
 p {
@@ -73,16 +91,19 @@ ul {
   margin-bottom: 2vh;
 }
 
-.collapsable-header {
+.collapsible-header {
   height: initial;
   -webkit-transition: all 0.2s;
+  border-bottom: 0;
+  line-height: 1.5rem;
+  padding: 1em,
 }
 
-#countdown {
+.countdown {
   display: none;
   text-align: center;
 
-  .counter {
+  &__counter {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -95,14 +116,50 @@ ul {
   }
 }
 
-#livestream {
+.livestream {
   display: none;
 }
 
-#playlist {
+.playlist {
   display: block;
 }
 
-.container {
-  padding: 0;
+.collapsible.popout>li {
+  background-color: #fff;
+}
+
+.collapsible.popout>li.active {
+  margin: 16px;
+}
+
+.collapsible-body {
+  border-bottom: 0px;
+
+  .collapsible {
+    box-shadow: 0 0;
+    border-right: 0;
+    border-left: 0;
+  }
+
+  .collapsible-header {
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__events {
+    width: 80%;
+
+    @media screen and (max-width: @large-phone) {
+      width: 100%;
+    }
+
+    @media screen and (min-width: 800px) {
+      max-width: @card-width;
+    }
+  }
 }
