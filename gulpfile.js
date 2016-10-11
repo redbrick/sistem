@@ -6,6 +6,7 @@ var minify = require('gulp-minify');
 var rename = require('gulp-rename');
 var connect = require('gulp-connect');
 var jsonSchema = require('gulp-json-schema');
+var babel = require('gulp-babel');
 
 gulp.task('dev', ['compress', 'scss', 'fonts', 'webserver', 'validate'], function () {
     gulp.watch(['./css/*.scss', './js/*.js', './**/*.html'], ['scss', 'compress', 'html']);
@@ -14,6 +15,7 @@ gulp.task('dev', ['compress', 'scss', 'fonts', 'webserver', 'validate'], functio
 gulp.task('compress', function() {
   gulp.src(['js/*.js', 'node_modules/materialize-css/dist/js/materialize.js'])
     .pipe(concat('main.js'))
+    .pipe(babel())
     .pipe(minify({
         ext:{
             min:'.min.js'
@@ -44,7 +46,7 @@ gulp.task('webserver', function() {
 
 gulp.task('fonts', function() {
    return gulp.src('./node_modules/materialize-css/fonts/**')
-       .pipe(gulp.dest('dist/fonts'))
+       .pipe(gulp.dest('dist/fonts'));
 });
 
 gulp.task('html', function() {
@@ -52,7 +54,7 @@ gulp.task('html', function() {
     .pipe(connect.reload());
 });
 
-gulp.task('validate', () => {
+gulp.task('validate', function() {
   return gulp.src(['./events.json', './2016/*.json', './2015/*.json'])
     .pipe(jsonSchema('schema.json'));
 });
