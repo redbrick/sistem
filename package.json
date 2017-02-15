@@ -4,10 +4,11 @@
   "description": "This repository contains the Techweek website",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "eslint js/main,js && bin/check-event-json && gulp",
+    "test": "eslint js/* bin/* && bin/check-event-json && gulp",
     "dev": "gulp dev",
-    "postinstall": "npm rebuild node-sass && gulp",
-    "gulp": "gulp"
+    "postinstall": "gulp",
+    "lint": "eslint",
+    "build": "gulp"
   },
   "repository": {
     "type": "git",
@@ -46,10 +47,15 @@
     "env": {
       "browser": true,
       "es6": true,
+      "node": true,
       "jquery": true
+    },
+    "globals": {
+      "start": true
     },
     "extends": "eslint:recommended",
     "rules": {
+      "no-console": 0,
       "indent": [
         "error",
         2

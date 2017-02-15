@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-
-var fs = require('fs');
-var file = process.argv[2];
-var glob = require("glob")
+'use strict';
+const fs = require('fs');
+const file = process.argv[2];
+const glob = require('glob');
 
 if(file !== undefined && file !== null) {
   checkJson(file);
@@ -22,7 +22,6 @@ if(file !== undefined && file !== null) {
 function checkJson (filename) {
   try {
     JSON.parse(fs.readFileSync(filename, 'utf8'));
-    console.log(filename +  ' looks good');
   } catch (err) {
     console.error(filename, err);
     process.exit(1);
