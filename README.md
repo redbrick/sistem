@@ -1,7 +1,6 @@
 # SISTEM Website
-
 ---
-This repository contains the SISTEM website. Forked from the [Redbrick Techweek site](https://github.com/redbrick/TechWeek).
+This repository contains the SISTEM website
 The website was written to have the Google Material Design look and feel. MaterializeCSS was used to speed up the process.  
 
 ## Deployment
@@ -10,16 +9,10 @@ To deploy to a server just run from the parent of of the folder you want to depl
 _example writen assuming folder deployed is sistem-site/dist_
 
 ```
-git clone https://github.com/redbrick/sistem-site.git
-cd techweek
+git clone https://github.com/theycallmemac/sistem-site.git
+cd sistem-site
 npm install
 yarn
-```
-
-### Docker
-
-```
-docker-compose up install
 ```
 
 ## How it works
@@ -41,13 +34,6 @@ Gulp concats this with materilize and minifies it to `dist/js`
 * When running the files locally, run it using a web server or you will have problems with Same-origin policy. _no longer true as site is regenerated_
 
 A simple solution is to run `gulp dev` which will compile the less, watch it and start a webserver at http://localhost:8000
-
-### Docker
-
-```
-docker-compose up install
-docker-compose up dev
-```
 
 ### sCSS
 
