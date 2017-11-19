@@ -7,30 +7,36 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   </head>
   <body>
+    <script>
+    var countDownTo = new Date("March 24, 2018 09:00:00").getTime();
+    var func = setInterval(function() {
+    var currentTime = new Date().getTime();
+    var span = countDownTo - currentTime;
+    var days = Math.floor(span / (1000 * 60 * 60 * 24));
+    var hrs = Math.floor((span % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var mins = Math.floor((span % (1000 * 60 * 60)) / (1000 * 60));
+    var secs = Math.floor((span % (1000 * 60)) / 1000);
+    document.getElementById("countdowntimer").innerHTML = "Event begins in <p style='color:#6BA837; display:inline;'> " + days + "</p> days <p style='color:#6BA837; display:inline;'> " + hrs + "</p> hours <p style='color:#6BA837; display:inline;'> " + mins + "</p> minutes <p style='color:#6BA837; display:inline;'> " + secs + "</p> seconds ";
+    if (span < 0) {
+        clearInterval(func);
+        document.getElementById("countdowntimer").innerHTML = "SISTEM HAS BEGUN";
+    }
+    }, 1000);
+    </script>
     <div class="wrapper">
       <div class="sub-wrap">
         <header class="title">
-          <h1 class="title__text"><a href="/"><span class="title__text__colour">{{{ splitTitle site.title }}}</a></h1>
-          <p>{{ location }} {{ start }} - {{ end }} {{ month }} {{ year }}</p>
+            <h1 class="title__text"><a href="/"><span class="title__text__colour"><img src="https://fontmeme.com/permalink/171115/8b599403046ce0121496de57e1303b4f.png" border="0"><br><h5>{{{ site.title }}}</h5></h1>
+          <p>{{ location }} {{ date }} {{ month }} {{ year }}</p>
           <ul class="menu">{{~#each site.menu~}}
             <li class="menu__item">
               <a href="/{{ url }}">{{ title }}</a>
             </li>
             {{/each}}</ul>
         </header>
-        <!-- Countdown is show up to 10 minutes before the event -->
+        <p style="color:#6B6E70; padding-top: 100px; text-align:center; font-size: 24px; font-weight:100; font-family:Roboto:100,300,400" id="countdowntimer"></p>
         <main>
-          <div class="countdown">
-            {{ site.title }} Starts in:
-            <div class="countdown__counter">
-              <span>&nbsp;</span>
-              <span>&nbsp;</span>
-              <span>&nbsp;</span>
-              <span>&nbsp;</span>
-            </div>
-          </div>
-          <!-- 10 minutes before start of the event the livestream will come on -->
-          <div class="container livestream">
+	   <div class="container livestream">
             <iframe id="live" src="{{ video }}" width="100%" height="400" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" webkitallowfullscreen="" allowfullscreen=""></iframe>
           </div>
         </main>
@@ -42,7 +48,7 @@
             <ul class="collapsible popout card-container__events" data-collapsible="accordion">
               <li data-hash="#{{ day }}" class="active">
                 <div id="#{{ day }}" class="collapsible-header container day">
-                  <h5 class="day__title" data-position="right" style="color: rgb(233, 30, 99);">
+                  <h5 class="day__title" data-position="right">
                     <span class="day__title__bold">{{ day }}</span> | {{ description }}
                   </h5>
                 </div>
@@ -66,7 +72,7 @@
           </div>
         {{/each}}</ul>
       </div>
-    </div>
+    </div>	  
     <!-- The script is loaded and ran -->
     <script> var start = (new Date('{{live}}'));</script>
     <script type="text/javascript" src="/js/main.min.js"></script>

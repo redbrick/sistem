@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/redbrick/techweek.dcu.ie#readme",
   "dependencies": {
+    "babel-register": "^6.26.0",
     "event-page": "^1.2.1",
     "jquery": "^2.2.4",
     "materialize-css": "^0.97.7"
@@ -57,6 +58,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
     "gulp-shell": "^0.5.2",
-    "gulp-uncss": "^1.0.6"
+    "gulp-uncss": "^1.0.6",
+    "gulp-yarn": "^1.0.1"
   }
 }

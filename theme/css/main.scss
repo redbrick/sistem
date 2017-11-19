@@ -3,7 +3,7 @@
 @import '../../node_modules/materialize-css/sass/materialize.scss';
 
 body {
-  background-color: $color-primary;
+  background-color: $color-black;
   .wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -20,15 +20,17 @@ body {
           font-weight: $title-font-weight;
 
           &__colour {
-            color: $color-red;
+            color: $color-green;
             font-weight: $title-colored-font-weight;
           }
 
           a {
-            color: $color-black;
+            color: $color-grey;
           }
         }
-
+        p,h5 {
+            color: $color-grey;
+        }
         .menu {
           list-style-type: none;
           margin: $menu-margin;
@@ -42,7 +44,9 @@ body {
             float: left;
             padding: 0 8px;
           }
-        }
+      }
+      .menu__item a {
+        color: $color-green;
       }
     }
 
@@ -87,7 +91,7 @@ body {
 
     &__place {
       display: inline-block;
-      color: $color-black;
+      color: $color-grey;
       float: right;
     }
   }
@@ -119,23 +123,6 @@ body {
 
     .collapsible-body, .collapsible-header {
       border-top: $collapsible-body-border;
-    }
-  }
-
-  .countdown {
-    display: none;
-    text-align: center;
-
-    &__counter {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      font-size: medium;
-
-      span {
-        display: block;
-        font-size: $countdown-font-size;
-      }
     }
   }
 

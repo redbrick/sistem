@@ -4,7 +4,7 @@ const views = +localStorage.visited;
 // Define an array of colours, based on Material Design Color recommendations
 const colors = ['#f44336', '#009688', '#4caf50', '#ffc107', '#e91e63'];
 let now = new Date().getTime();
-let liveShown = false;
+let liveShown = true;
 const second = 1000;
 const minute = second * 60;
 const hour = minute * 60;
@@ -61,15 +61,8 @@ function setHash(hash) {
 
 function load() {
   const currHash = getHash();
-  $('h5').each(function color(c) {
-    $(this).css({ color: colors[(views + c) % 5] });
-  });
-  $('.collapsible').collapsible();
-  $('header h1 span').css({ color: colors[(views + 3) % 5] });
 
-  if (typeof currHash !== 'boolean') {
-    $(`li[data-hash="${currHash}"] > div`).trigger('click');
-  }
+  $('.collapsible').collapsible();
 
   $('.card-container__events > li').on('click', function setUrl() {
     const hash = $(this).attr('data-hash');

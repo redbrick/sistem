@@ -1,96 +1,120 @@
 {
   "title": "Home",
   "template": "schedule",
-  "location": "Dublin City University",
-  "start": 15,
-  "end": 29,
+  "location": "Dogpatch Labs, CHq Building",
+  "date": 24,
   "month": "March",
-  "year": 2017,
-  "live": "2017-03-22T15:00:00",
+  "year": 2018,
   "archive": "false",
   "video": "https://www.youtube.com/embed/videoseries?list=PLPaLJSHTDMFhqzNc5C8UPJTQSKnKrjVP-",
   "days": [
     {
-      "day": "Wednesday-15th",
-      "description": "Security",
+      "day": "Conference Room",
+      "description": "Talks",
       "events": [
         {
-          "name": "Opening Event",
-          "by": "Redbrick DCU's Computer Networking Society",
-          "time": "15:00",
-          "place": {
-            "id": "LG26",
-            "map": "Somewhere in DCU"
-          },
-          "description": "Opening of TechWeek 2017"
+          "name": "Introduction",
+          "by": "The SISTEM Team",
+          "time": "09:00",
+          "description": "A welcoming speech to begin the day from some of the organisers and sponsors of SISTEM. "
         },
         {
-          "name": "BeyondCorp: A New Approach to Enterprise Security",
-          "by": "Donal Hunt - Site Reliability Engineering Manager in Google Ireland",
-          "time": "15:05",
-          "place": {
-            "id": "LG26",
-            "map": "Somewhere in DCU"
-          },
-          "description": "Virtually every company today uses firewalls to enforce perimeter security. However, this security model is problematic because, when that perimeter is breached, an attacker has relatively easy access to a company's privileged intranet. As companies adopt mobile and cloud technologies, the perimeter is becoming increasingly difficult to enforce. Google is taking a different approach to network security. We are removing the requirement for a privileged intranet and moving our corporate applications to the Internet."
+           "name": "SLOT FILLED",
+           "by": "TBA",
+           "time": "09:30",
+           "description": ""
         },
         {
-          "name": "The curious case of an Iranian actor or maybe two...",
-          "by": "Alan Neville",
-          "time": "16:00",
-          "place": {
-            "id": "LG26",
-            "map": "Somewhere in DCU"
-          },
-          "description": "In late 2015, Symantec began investigating a suspicious piece of malware detected within a customers environment. Alan, a Senior Threat Intelligence Analyst takes you throguh the full investigation process, starting from a simple detection event to building out the bigger picture. The curious case of an Iranian actor or maybe two..."
+           "name": "SLOT FILLED",
+           "by": "TBA",
+           "time": "10:15",
+           "description": ""
         },
         {
-          "name": "IOT security",
-          "by": "d_fens",
-          "time": "17:00",
-          "place": {
-            "id": "LG26",
-            "map": "Somewhere in DCU"
-          },
-          "description": "How IOT security has been developing over the last few years (it hasn't) and what flaws are typically seen in these devices"
+           "name": "SLOT FREE",
+           "by": "NO ONE",
+           "time": "10:30",
+           "description": ""
+        },  
+        {
+           "name": "SLOT FREE",
+           "by": "NO ONE",
+           "time": "11:30",
+           "description": ""
         },
         {
-          "name": "Offensive Security",
-          "by": "Ciaran McNally",
-          "time": "17:30",
-          "place": {
-            "id": "LG26",
-            "map": "Somewhere in DCU"
-          },
-          "description": "In a server far far away, some blackhat alliance is enumerating your services in preparation for an attack. They are plnning the fall of your companies empire. We will discuss the open source intelligence techniques such enemies use to identify weaknesses in your armour and examine the processes involved in their penetratoon testing methodology"
+           "name": "SLOT FREE",
+           "by": "NO ONE",
+           "time": "12:15",
+           "description": ""
+        }, 
+        {
+           "name": "LUNCH",
+           "by":"NO ONE",
+           "time": "13:15",
+           "description": ""
+        },
+        {
+           "name": "SLOT FREE",
+           "by": "TBA",
+           "time": "14:15",
+           "description": ""
+        },
+        {
+           "name": "SLOT FREE",
+           "by": "TBA",
+           "time": "15:15",
+           "description": ""
+        },
+        {
+           "name": "Lightning Talks",
+           "by": "You Guys!",
+           "time": "16:00",
+           "description": "A series of lightning talks that people can sign up to give before the event."
         }
       ]
     },
-    {
-      "day": "Wednesday-22nd",
-      "description": "Dev Tools",
+    { "day": "Workshop Room 1",
+      "description": "Workshops",
       "events": [
-        {
-          "name": "Getting your code into production and keeping it there.",
-          "by": "Conor - Circle CI",
-          "time": "15:00",
-          "place": {
-            "id": "LG26",
-            "map": "Somewhere in DCU"
+          {
+              "name": "SLOT FILLED",
+              "by": "TBA",
+              "time": "09:30"
           },
-          "description": " Writing code is only the start of the process. Getting it into production and keeping it up and running requires a lot of tooling and techniques. I'm going to give a quick tour through some of the things you need to do to turn software into a running product."
-        },
-        {
-          "name": "Docker: A Better Way for Dependencies",
-          "by": "Cian Butler",
-          "time": "16:00",
-          "place": {
-            "id": "LG26",
-            "map": "Somewhere in DCU"
+          {
+              "name": "SLOT FILLED",
+              "by": "TBA",
+              "time": "11:30"
           },
-          "description": "What is Docker and why you should care. How does docker help you as a developer and how can it be used to speed up development and make your program more reliable "
-        }
-      ]
+          {
+              "name": "SLOT FREE",
+              "by": "NO ONE",
+              "time": "14:15"
+          }
+        ]
+    },
+    {
+        "day": "Workshop Room 2",
+        "description": "Workshops",
+        "events": [
+            {
+                "name": "SLOT FREE",
+                "by": "NO ONE",
+                "time": "09:30"
+            },
+            {
+              "name": "SLOT FREE",
+              "by": "NO ONE",
+              "time": "11:30"
+          },
+          {
+              "name": "SLOT FREE",
+              "by": "NO ONE",
+              "time": "14:15"
+          }
+ 
+        ]
     }
   ]
 }
