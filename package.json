@@ -1,7 +1,7 @@
 {
-  "name": "techweek",
+  "name": "sistem",
   "version": "1.0.0",
-  "description": "This repository contains the Techweek website",
+  "description": "This repository contains SISTEM website",
   "main": "gulpfile.js",
   "scripts": {
     "test": "eslint theme/js/* && gulp",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/redbrick/techweek.dcu.ie.git"
+    "url": "git+https://github.com/theycallmemac/sistem-site.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/redbrick/techweek.dcu.ie/issues"
+    "url": "https://github.com/theycallmemac/sistem-site/issues"
   },
-  "homepage": "https://github.com/redbrick/techweek.dcu.ie#readme",
+  "homepage": "https://github.com/theycallmemac/sistem-site.git#readme",
   "dependencies": {
     "babel-register": "^6.26.0",
     "event-page": "^1.2.1",
