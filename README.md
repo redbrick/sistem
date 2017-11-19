@@ -13,6 +13,7 @@ _example writen assuming folder deployed is sistem-site/dist_
 git clone https://github.com/redbrick/sistem-site.git
 cd techweek
 npm install
+yarn
 ```
 
 ### Docker
