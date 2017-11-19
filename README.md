@@ -13,7 +13,14 @@ git clone https://github.com/theycallmemac/sistem-site.git
 cd sistem-site
 npm install
 yarn
+
 ```
+### Docker
+
+```
+docker-compose up install
+```
+
 
 ## How it works
 
@@ -34,6 +41,13 @@ Gulp concats this with materilize and minifies it to `dist/js`
 * When running the files locally, run it using a web server or you will have problems with Same-origin policy. _no longer true as site is regenerated_
 
 A simple solution is to run `gulp dev` which will compile the less, watch it and start a webserver at http://localhost:8000
+
+### Docker
+
+```
+docker-compose up install
+docker-compose up dev
+```
 
 ### sCSS
 
