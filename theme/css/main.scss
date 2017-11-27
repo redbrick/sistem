@@ -71,7 +71,7 @@ body {
       }
     }
   }
-
+  
   .event-card {
     display: flex;
 
@@ -106,7 +106,7 @@ body {
 
   .collapsible-header {
     height: initial;
-    -webkit-transition: all .2s;
+    -webkit-transition: all .3s;
     border-bottom: 0;
     line-height: 1.5rem;
     padding: 1em;
@@ -146,9 +146,6 @@ body {
   }
 
   .card-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 560px;
 
     @media screen and (max-width: $large-phone) {
@@ -168,4 +165,3 @@ body {
       }
     }
   }
-}

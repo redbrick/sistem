@@ -1,7 +1,7 @@
 {
   "title": "Home",
   "template": "schedule",
-  "location": "Dogpatch Labs, CHq Building",
+  "location": "Bank Of Ireland, Grand Canal Dock",
   "date": 24,
   "month": "March",
   "year": 2018,
@@ -75,7 +75,7 @@
       ]
     },
     { "day": "Workshop Room 1",
-      "description": "Workshops",
+      "description": "Security",
       "events": [
           {
               "name": "SLOT FILLED",
@@ -96,7 +96,7 @@
     },
     {
         "day": "Workshop Room 2",
-        "description": "Workshops",
+        "description": "Algorithms & Data Structures",
         "events": [
             {
                 "name": "SLOT FREE",
