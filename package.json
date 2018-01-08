@@ -5,7 +5,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "test": "eslint theme/js/* && gulp",
-    "dev": "gulp dev",
+    "start": "gulp dev",
     "lint": "eslint .",
     "build": "node node_modules/gulp",
     "fix": "eslint . --fix"
