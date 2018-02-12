@@ -1,0 +1,23 @@
+nav {
+  margin: $title-margin;
+  text-align: center;
+
+  a {
+    color: $green;
+  }
+
+  p {
+    color: $white;
+  }
+
+  .title {
+    font-size: $title-font-size;
+    font-weight: $title-font-weight;
+    margin: $text-margin;
+  }
+
+  .menu {
+    @include flex;
+    overflow: hidden;
+  }
+}

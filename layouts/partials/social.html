@@ -1,0 +1,51 @@
+<ul class="icons">
+  {{ with .Site.Params.social.twitter }}
+    <li>
+      <a href="https://twitter.com/{{ .user }}" class="icon fa fa-{{ .icon }}">
+        <span class="label">Twitter</span>
+      </a>
+    </li>
+  {{ end }}
+  {{ with .Site.Params.social.mastodon }}
+    <li>
+      <a href="https://{{ .host }}/@{{ .user }}" class="icon fa fa-{{ .icon }}">
+        <span class="label">Mastodon</span>
+      </a>
+    </li>
+  {{ end }}
+  {{ with .Site.Params.social.github }}
+    <li>
+      <a href="https://github.com/{{ .user }}" class="icon fa fa-{{ .icon }}">
+        <span class="label">GitHub</span>
+      </a>
+    </li>
+  {{ end }}
+  {{ with .Site.Params.social.git }}
+    <li>
+      <a href="https://{{ .host }}/@{{ .user }}" class="icon fa fa-{{ .icon }}">
+        <span class="label">Git</span>
+      </a>
+    </li>
+  {{ end }}
+  {{ with .Site.Params.social.email }}
+    <li>
+      <a href="mailto://{{ .address}}" class="icon fa fa-{{ .icon }}">
+        <span class="label">email</span>
+      </a>
+    </li>
+  {{ end }}
+  {{ with .Site.Params.social.linkedin }}
+    <li>
+      <a href="https://linkedin.com/in/{{ .user }}" class="icon fa fa-{{ .icon }}">
+        <span class="label">LinkedIn</span>
+      </a>
+    </li>
+  {{ end }}
+  {{ with .Site.Params.social.phone }}
+    <li>
+      <a href="tel:{{ .num }}" class="icon fa fa-{{ .icon }}">
+        <span class="label">Phone</span>
+      </a>
+    </li>
+  {{ end }}
+</ul>

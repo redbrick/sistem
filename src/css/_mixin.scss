@@ -1,0 +1,13 @@
+@mixin flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  margin: $menu-margin;
+  padding: 0;
+
+  &-item {
+    float: left;
+    padding: 0 8px;
+  }
+}

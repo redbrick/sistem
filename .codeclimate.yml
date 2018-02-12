@@ -1,17 +1,23 @@
 ---
-engines:
+version: "2"
+plugins:
+  eslint:
+    enabled: true
   duplication:
     enabled: true
     config:
       languages:
-      - javascript
-  eslint:
-    enabled: true
+        - javascript
   fixme:
+    enabled: true
+  scss-lint:
+    enabled: true
+  markdownlint:
     enabled: true
 ratings:
   paths:
-  - "**.js"
+    - "**.js"
 exclude_paths:
-- dist/
-- node_modules/
+  - node_modules
+  - public/assets
+  - static/assets
