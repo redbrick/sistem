@@ -1,7 +1,31 @@
 ---
 locations:
+  - location: Workshop Room 1
+    description: Security
+    events:
+      - name: SLOT FILLED
+        by: TBA
+        time: '09:30'
+      - name: SLOT FILLED
+        by: TBA
+        time: '11:30'
+      - name: SLOT FREE
+        by: NO ONE
+        time: '14:15'
+  - location: Workshop Room 2
+    description: Algorithms & Data Structures
+    events:
+      - name: SLOT FREE
+        by: NO ONE
+        time: '09:30'
+      - name: SLOT FREE
+        by: NO ONE
+        time: '11:30'
+      - name: SLOT FREE
+        by: NO ONE
+        time: '14:15'
   - location: Conference Room
-    description: Talks
+    description: Main Track
     events:
       - name: Introduction
         by: The SISTEM Team
@@ -47,27 +71,3 @@ locations:
         description: >
           A series of lightning talks that people can sign up to give before
           the event.
-  - location: Workshop Room 1
-    description: Security
-    events:
-      - name: SLOT FILLED
-        by: TBA
-        time: '09:30'
-      - name: SLOT FILLED
-        by: TBA
-        time: '11:30'
-      - name: SLOT FREE
-        by: NO ONE
-        time: '14:15'
-  - location: Workshop Room 2
-    description: Algorithms & Data Structures
-    events:
-      - name: SLOT FREE
-        by: NO ONE
-        time: '09:30'
-      - name: SLOT FREE
-        by: NO ONE
-        time: '11:30'
-      - name: SLOT FREE
-        by: NO ONE
-        time: '14:15'
