@@ -1,8 +1,12 @@
 .deck {
   display: grid;
-  grid-gap: 1rem; // sass-lint:disable-line no-misspelled-properties
+  grid-gap: 6rem; // sass-lint:disable-line no-misspelled-properties
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  padding: 1rem;
+  padding: 6rem;
+  @media screen and (min-width: $stupid-res) {
+    grid-gap: 8rem; // sass-lint:disable-line no-misspelled-properties
+    padding: 8rem;
+  }
 
   .card {
     background-color: $white;

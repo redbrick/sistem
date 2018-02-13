@@ -1,5 +1,9 @@
 {{ define "main" }}
   <main>
-    {{ partial "schedule" .Site.Data.schedule }}
+    <section class="deck">
+      {{ range .Site.Data.schedule.locations }}
+        {{ partial "card" . }}
+      {{ end }}
+    </section>
   </main>
 {{ end }}
