@@ -11,3 +11,9 @@ sectionPagesMenu = "main"
   map = "https://goo.gl/maps/Wyyf4N2KH452"
   date = "2018-03-24T09:00:00"
   twitter = "redbrickdcu"
+  organisers = [
+    "DUCSS",
+    "Redbrick",
+    "DIT Compsoc",
+    "DU Netsoc"
+  ]

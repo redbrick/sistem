@@ -1,6 +1,7 @@
 <footer>
   <div class="tag">
-    {{ .Site.Params.description }}
+    <div>{{ .Site.Params.description }}</div>
+    <div>{{- range $i, $el := .Site.Params.organisers -}} {{if $i}}, {{end}} {{ $el }} {{- end -}}</div>
   </div>
   {{ partial "social" . }}
 </footer>
