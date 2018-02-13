@@ -4,18 +4,9 @@ title = "SISTEM"
 sectionPagesMenu = "main"
 
 [Params]
+  description = "a event ran by students, for students."
   favicon = "favicon.ico"
   repo = "redbrick/sistem"
   location = "Bank Of Ireland, Grand Canal Dock"
   date = "2018-03-24T09:00:00"
   video = ""
-
-[Params.social.twitter]
-  icon = "twitter"
-  user = "redbrickdcu"
-[Params.social.github]
-  icon = "github-alt"
-  user = "redbrick"
-[Params.social.email]
-  icon = "envelope"
-  address = "events@redbrick.dcu.ie"

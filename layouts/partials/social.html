@@ -1,51 +1,24 @@
-<ul class="icons">
-  {{ with .Site.Params.social.twitter }}
-    <li>
-      <a href="https://twitter.com/{{ .user }}" class="icon fa fa-{{ .icon }}">
-        <span class="label">Twitter</span>
-      </a>
-    </li>
-  {{ end }}
-  {{ with .Site.Params.social.mastodon }}
-    <li>
-      <a href="https://{{ .host }}/@{{ .user }}" class="icon fa fa-{{ .icon }}">
-        <span class="label">Mastodon</span>
-      </a>
-    </li>
-  {{ end }}
-  {{ with .Site.Params.social.github }}
-    <li>
-      <a href="https://github.com/{{ .user }}" class="icon fa fa-{{ .icon }}">
-        <span class="label">GitHub</span>
-      </a>
-    </li>
-  {{ end }}
-  {{ with .Site.Params.social.git }}
-    <li>
-      <a href="https://{{ .host }}/@{{ .user }}" class="icon fa fa-{{ .icon }}">
-        <span class="label">Git</span>
-      </a>
-    </li>
-  {{ end }}
-  {{ with .Site.Params.social.email }}
-    <li>
-      <a href="mailto://{{ .address}}" class="icon fa fa-{{ .icon }}">
-        <span class="label">email</span>
-      </a>
-    </li>
-  {{ end }}
-  {{ with .Site.Params.social.linkedin }}
-    <li>
-      <a href="https://linkedin.com/in/{{ .user }}" class="icon fa fa-{{ .icon }}">
-        <span class="label">LinkedIn</span>
-      </a>
-    </li>
-  {{ end }}
-  {{ with .Site.Params.social.phone }}
-    <li>
-      <a href="tel:{{ .num }}" class="icon fa fa-{{ .icon }}">
-        <span class="label">Phone</span>
-      </a>
-    </li>
-  {{ end }}
-</ul>
+<div class="icons">
+  <a href="https://www.facebook.com/share.php?u={{ .Site.BaseURL }}&title={{ .Site.Title }}"
+    target="blank" class="fa-stack fa-lg">
+      <i class="fa fa-circle fa-stack-2x"aria-hidden="true" ></i>
+      <i class="fa fa-facebook fa-stack-1x fa-inverse" aria-hidden="true"></i>
+  </a>
+
+  <a target="blank" class="fa-stack fa-lg"
+    href="https://twitter.com/intent/tweet?status={{ .Site.Title }}+{{ .Site.BaseURL }}">
+      <i class="fa fa-circle fa-stack-2x"aria-hidden="true" ></i>
+      <i class="fa fa-twitter fa-stack-1x fa-inverse" aria-hidden="true"></i>
+  </a>
+
+  <a target="blank" class="fa-stack fa-lg" href="https://plus.google.com/share?url={{ .Site.BaseURL }}">
+    <i class="fa fa-circle fa-stack-2x"aria-hidden="true" ></i>
+    <i class="fa fa-google-plus fa-stack-1x fa-inverse" aria-hidden="true"></i>
+  </a>
+
+  <a target="blank" class="fa-stack fa-lg"
+    href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Site.BaseURL }}&title={{ .Site.Title }}">
+      <i class="fa fa-circle fa-stack-2x"aria-hidden="true" ></i>
+      <i class="fa fa-linkedin fa-stack-1x fa-inverse" aria-hidden="true"></i>
+  </a>
+</div>

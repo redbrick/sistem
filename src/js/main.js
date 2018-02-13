@@ -21,7 +21,6 @@ function load() {
   });
 
   getName('slot').forEach(el => {
-    collapseSection(el.querySelector('.body.collapsible'));
     el.addEventListener('click', () => {
       const section = el.querySelector('.body.collapsible');
       const isCollapsed = section.getAttribute('data-collapsed') === 'true';

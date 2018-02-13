@@ -11,7 +11,7 @@
 
     .title {
       font-size: 2rem;
-      padding: 1rem;
+      padding: 1rem 1em;
 
       .bold {
         font-weight: 500;
@@ -33,25 +33,20 @@
           border-bottom: 0;
           border-top: 1px solid #ddd;
           cursor: pointer;
-          display: flex;
+          display: grid;
+          grid-gap: 1rem; // sass-lint:disable-line no-misspelled-properties
+          grid-template-columns: 20% 40% 40%;
           height: initial;
           line-height: 1.5rem;
           padding: 1em;
 
           .title {
-            display: inline-block;
             font-size: 1em;
             padding: 0;
-            width: 80%;
           }
 
           .time {
-            display: inline-block;
-            float: left;
             font-size: 1.5vh;
-            width: 15%;
-            margin: 0 1em 0 0;
-            max-width: 5em;
           }
         }
 

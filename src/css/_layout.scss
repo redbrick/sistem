@@ -12,6 +12,12 @@
 
   footer {
     grid-area: footer;
+
+    .tag {
+      color: $white;
+      font-size: 1rem;
+      text-align: center;
+    }
   }
 
   main {
