@@ -1,3 +1,5 @@
 ---
-ltitle: "live"
+title: "live"
+aliases:
+  - "video"
 ---

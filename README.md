@@ -21,7 +21,7 @@ _example written assuming folder deployed is `sistem/public`_
 
 ```
 git clone https://github.com/redbrick/sistem
-cd sistem-site
+cd sistem
 yarn
 yarn build
 ```
@@ -33,7 +33,7 @@ yarn build
 ### Local Development
 
 Run `yarn build:dev` to start a webpack watcher and hugo server. Sistem will be
-assisible from `localhost:1313`
+accessible from `localhost:1313`
 
 ### SCSS
 

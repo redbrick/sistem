@@ -1,5 +1,3 @@
-let now = new Date().getTime();
-let liveShown = false;
 const second = 1000;
 const minute = second * 60;
 const hour = minute * 60;
@@ -7,41 +5,38 @@ const day = hour * 24;
 
 const minutes = times => times * minute;
 
-export default function countdown() {
-  if (now + minutes(10) < start) {
-    document.queryselectorall('.countdown').style.transition = 'opacity 4s';
-  } else {
-    showLive();
-  }
-  now += 1000;
+const getTimeRemaining = (endtime, now = new Date().getTime()) => ({
+  total: endtime - now,
+  days: Math.floor((endtime - now) / day),
+  hours: Math.floor(((endtime - now) / hour) % 24),
+  minutes: Math.floor(((endtime - now) / 1000 / 60) % 60),
+  seconds: Math.floor(((endtime - now) / second) % 60),
+});
 
-  const dist = start - now;
-  const days = Math.floor(dist / day);
-  const hours = Math.floor((dist % day) / hour);
-  const mins = Math.floor((dist % hour) / minute);
-  const secs = Math.floor((dist % minute) / second);
+export default function countdown(id, endtime) {
+  const clock = document.getElementById(id);
+  const spans = {
+    days: clock.querySelector('.days'),
+    hours: clock.querySelector('.hours'),
+    minutes: clock.querySelector('.minutes'),
+    seconds: clock.querySelector('.seconds'),
+  };
 
-  document.querySelectorAll('.countdown .countdown__counter').innerHTML = `
-    ${days > 0 ? `<span>${days} Days</span>` : ''}
-    ${hours > 0 ? `<span>${hours} Hours</span>` : ''}
-    ${mins > 0 ? `<span>${mins} Minutes</span>` : ''}
-    <span>${secs} Seconds</span>`;
-}
+  update();
+  const timeinterval = setInterval(update, 1000);
 
-function showLive() {
-  if (!liveShown) {
-    $('.countdown').hide(400, () => {
-      $('.livestream').show(0, () => {
-        document.querySelectorAll('video').style.height = 0;
-        $('video').animate(
-          {
-            height: $('video').width() * (9 / 16),
-            display: 'block',
-          },
-          1000,
-        );
-      });
-    });
-    liveShown = true;
+  function update() {
+    const t = getTimeRemaining(endtime);
+
+    spans.days.innerHTML = t.days;
+    spans.hours.innerHTML = `0${t.hours}`.slice(-2);
+    spans.minutes.innerHTML = `0${t.minutes}`.slice(-2);
+    spans.seconds.innerHTML = `0${t.seconds}`.slice(-2);
+
+    if (t.total <= minutes(10)) {
+      [...document.getElementsByClassName('countdown')][0].classList.toggle('hidden');
+      [...document.getElementsByClassName('livestream')][0].classList.toggle('hidden');
+      clearInterval(timeinterval);
+    }
   }
 }

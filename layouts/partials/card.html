@@ -1,0 +1,28 @@
+<div>
+  <article class="card">
+    <header class="title" name="card.title" style="color: rgb(233, 30, 99);">
+      {{ markdownify .description }}
+    </header>
+    <figure class="thumbnail">
+      <img src="{{ .image }}">
+    </figure>
+    <main class="description">
+      {{ $location := .location }}
+      <ul id="{{ urlize .location }}-events">
+        {{ range .events }}
+          <li name="slot">
+            <div class="header" name="slot.title">
+              <div class="time"> {{ .time }} </div>
+              <div class="title"> {{ .name }} </div>
+              <div class="location"> {{ $location }} </div>
+            </div>
+            <div class="body collapsible" data-collapsed="true" style="height: 0";>
+              <p>By: <i>{{ .by }}</i></p>
+              <p>{{ markdownify .description }}</p>
+            </div>
+          </li>
+        {{ end }}
+      </ul>
+    </main>
+  </article>
+</div>

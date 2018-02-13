@@ -11,24 +11,20 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="mobile-web-app-capable" content="yes">
-  <script type="application/ld+json">
-  {
+  <script type="application/ld+json">{
     "@context" : "http://schema.org",
-    "@type" : "Resume",
-    "image" : {{ apply .Params.images "absURL" "." }}
-  }
-  </script>
+    "@type" : "WebSite",
+    "image" : {{ apply .Params.images "absURL" "." }},
+    "name": "{{- if .Params.heading -}} {{- .Params.heading -}} {{- else -}} {{- .Site.Title }} {{- end -}}"
+  }</script>
 
-  <link rel="manifest" href="/manifest.json">
   <title>
-    {{- $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" -}}
-    {{- if eq $url "/" -}}
-        {{- .Site.Title -}} {{ .Site.Params.year }} | {{ .Site.Params.location }}
+    {{- if eq (add .Site.BaseURL "/") (add .Permalink "") -}}
+        {{- .Site.Title -}} {{ (time .Site.Params.date).year }} | {{ .Site.Params.location }}
     {{- else -}}
-        {{- if .Params.heading -}} {{- .Params.heading -}} {{- else -}} {{- .Title -}} {{- end -}}
+    {{- if .Params.heading -}} {{- .Params.heading -}} {{- else -}} {{- .Site.Title }} - {{ .Title -}} {{- end -}}
     {{- end -}}
   </title>
-  {{ .Hugo.Generator }}
   <meta name="description" content="{{ .Site.Params.Description }}">
   <meta name="theme-color" content="#fff">
 
@@ -41,5 +37,5 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="{{ .Site.Title }}">
   <meta name="twitter:description" content="{{ .Site.Params.Description }}">
-  <meta name="twitter:creator" content="@{{ .Site.Params.social.twitter.user }}">
+  <meta name="twitter:creator" content="@{{ .Site.Params.twitter }}">
 </head>

@@ -1,0 +1,32 @@
+.countdown {
+  display: flex;
+  justify-content: center;
+
+  #counter {
+    color: $white;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 100;
+    margin-bottom: 1rem;
+    text-align: center;
+
+    .digit {
+      background: #00bf96;
+      border-radius: 3px;
+      display: inline-block;
+      padding: 1rem;
+
+      > span {
+        background: $dark-green;
+        border-radius: 3px;
+        display: inline-block;
+        padding: 15px;
+      }
+
+      .smalltext {
+        font-size: 16px;
+        padding-top: 5px;
+      }
+    }
+  }
+}

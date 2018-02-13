@@ -1,6 +1,6 @@
 import '../css/main.scss';
 import { collapseSection, expandSection } from './collapse';
-// import countdown from './countdown';
+import countdown from './countdown';
 
 if (document.readyState === 'complete' || document.readyState !== 'loading') {
   load();
@@ -32,4 +32,5 @@ function load() {
       }
     });
   });
+  countdown('counter', start);
 }

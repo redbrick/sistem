@@ -1,6 +1,44 @@
 {{ define "main" }}
   <main>
-    {{ partial "countdown" . }}
-    {{ partial "schedule" .Site.Data.schedule }}
+    <section class="deck">
+      {{ $live := .Site.Params.date }}
+      {{ range $i, $event := .Site.Data.schedule.locations }}
+        {{ if $event.live }}
+        <div>
+          <article class="card">
+            <!-- Countdown is show up to 10 minutes before the event. 10 minutes before start of the event the livestream will come on -->
+            <header class="title" name="card.title" style="color: rgb(233, 30, 99);">
+              Starts in:
+            </header>
+            <main class="description">
+              <div class="countdown">
+                <div id="counter">
+                  {{ range $i, $time := (slice "days" "hours" "minutes" "seconds") }}
+                    <div class="digit">
+                      <span class="{{ $time }}">&nbsp;</span>
+                      <div class="smalltext">{{ humanize $time }}</div>
+                    </div>
+                  {{ end }}
+                </div>
+              </div>
+            </main>
+            <figure class="thumbnail">
+              <div class="livestream hidden">
+                <iframe id="live"
+                  src="{{ $event.video }}"
+                  width="100%" height="400"
+                  marginwidth="0" marginheight="0"
+                  scrolling="no" frameborder="0"
+                  webkitallowfullscreen="" allowfullscreen="">
+                </iframe>
+              </div>
+            </figure>
+            <script> var start = (new Date('{{ time $live }}'));</script>
+          </article>
+          </div>
+          {{ partial "card" $event }}
+        {{ end }}
+      {{ end }}
+    </section>
   </main>
 {{ end }}

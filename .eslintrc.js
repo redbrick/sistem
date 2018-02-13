@@ -3,6 +3,9 @@ module.exports = {
     es6: true,
     browser: true,
   },
+  globals: {
+    start: true,
+  },
   parser: 'babel-eslint',
   extends: ['airbnb', 'plugin:prettier/recommended'],
   rules: {
