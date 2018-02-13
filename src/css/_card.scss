@@ -39,13 +39,20 @@
           height: initial;
           line-height: 1.5rem;
           padding: 1em;
+          @media screen and (max-width: $medium-phone) {
+            grid-gap: 0; // sass-lint:disable-line no-misspelled-properties
+          }
 
           .title {
             font-size: 1em;
             padding: 0;
           }
 
+          .location,
           .time {
+            @media screen and (max-width: $large-phone) {
+              font-size: 1em;
+            }
             font-size: 1.5vh;
           }
         }
