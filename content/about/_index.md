@@ -1,5 +1,5 @@
 ---
-title: "About SISTEM"
+title: "About"
 ---
 
 ### Who runs SISTEM?
