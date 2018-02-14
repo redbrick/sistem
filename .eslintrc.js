@@ -7,7 +7,7 @@ module.exports = {
     start: true,
   },
   parser: 'babel-eslint',
-  extends: ['airbnb', 'plugin:prettier/recommended'],
+  extends: ['airbnb-base', 'plugin:prettier/recommended'],
   rules: {
     'linebreak-style': ['error', 'unix'],
     'arrow-parens': ['error', 'as-needed'],
