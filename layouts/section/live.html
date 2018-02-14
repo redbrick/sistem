@@ -1,7 +1,6 @@
 {{ define "main" }}
   <main>
     <section class="deck">
-      {{ $live := .Site.Params.date }}
       {{ range $i, $event := .Site.Data.schedule.locations }}
         {{ if $event.live }}
         <div>
@@ -33,7 +32,6 @@
                 </iframe>
               </div>
             </figure>
-            <script> var start = (new Date('{{ time $live }}'));</script>
           </article>
           </div>
           {{ partial "card" $event }}

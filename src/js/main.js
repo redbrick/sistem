@@ -9,13 +9,13 @@ if (document.readyState === 'complete' || document.readyState !== 'loading') {
   document.addEventListener('DOMContentLoaded', load);
 }
 
-// Define an array of colours, based on Material Design Color recommendations
-const colors = ['#f44336', '#009688', '#4caf50', '#ffc107', '#e91e63'];
-
-const getName = el => [...document.getElementsByName(el)];
-
 function load() {
+  const getName = el => [...document.getElementsByName(el)];
+
   getName('card.title').forEach(title => {
+    // Define an array of colours, based on Material Design Color recommendations
+    // Colours are from TechWeek. TODO Choose new ones to fit system theme
+    const colors = ['#f44336', '#009688', '#4caf50', '#ffc107', '#e91e63'];
     title.style.color = colors[Math.floor(Math.random() * colors.length)];
   });
 

@@ -1,4 +1,4 @@
-import { isUndefined } from 'lodash';
+import { isUndefined, isNull } from 'lodash';
 
 const second = 1000;
 const minute = second * 60;
@@ -16,8 +16,8 @@ const getTimeRemaining = (endtime, now = new Date().getTime()) => ({
 });
 
 export default function countdown(id, endtime) {
-  if (isUndefined(endtime)) return;
   const clock = document.getElementById(id);
+  if (isUndefined(endtime) || isNull(clock)) return;
   const spans = {
     days: clock.querySelector('.days'),
     hours: clock.querySelector('.hours'),
