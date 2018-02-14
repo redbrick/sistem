@@ -14,7 +14,7 @@ When & where:
 
 Areas we are interested in:
 
-* Software dev
+* Software development
 * Security
 * Networks
 * Dare I say DevOps??
@@ -27,7 +27,7 @@ SISTEM is and acronym for the Students Inter Society Tech & Enterprise Meetup.
 It's pretty self explanatory, we provide a link between Students and those in
 the world of Tech and Enterprise in a casual meetup environment.
 
-### Why (some nice waffle)
+### Why
 
 SISTEM was born from the minds of students who love networking, conference
 styled meetups and all things tech. The societies behind SISTEM are DUCSS,
@@ -50,3 +50,4 @@ such an event to be held.
 We currently have some speakers and workshops organised and we are looking for
 more. We are interested in many different areas but we'd preferable like talks
 and workshops that don't go too far over the heads of students.
+[More Info](../cft)
