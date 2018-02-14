@@ -9,28 +9,27 @@ const extractSass = new ExtractTextPlugin({
   disable: process.env.NODE_ENV === 'development',
 });
 
-const plugins = [
-  new webpack.ProvidePlugin({
-    fetch: 'imports-loader?this=>global!exports-loader?global.fetch!whatwg-fetch',
-  }),
-  extractSass,
-];
+const loader = new webpack.ProvidePlugin({
+  fetch: 'imports-loader?this=>global!exports-loader?global.fetch!whatwg-fetch',
+});
 
-if (process.env.NODE_ENV !== 'development') {
-  plugins.concat([
-    new PurifyCSSPlugin({
-      paths: glob.sync(`${__dirname}layout/**/*.html`),
-      minify: true,
-    }),
-    new UglifyJSPlugin({
-      cache: true,
-      parallel: true,
-      uglifyOptions: {
-        ecma: 8,
-      },
-    }),
-  ]);
-}
+const plugins =
+  process.env.NODE_ENV !== 'development'
+    ? [
+        loader,
+        extractSass,
+        new PurifyCSSPlugin({
+          paths: glob.sync(`${__dirname}/public/**/*.html`),
+          minimize: true,
+        }),
+        new UglifyJSPlugin({
+          parallel: true,
+          uglifyOptions: {
+            ecma: 8,
+          },
+        }),
+      ]
+    : [loader, extractSass];
 
 module.exports = {
   plugins,

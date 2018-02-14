@@ -1,3 +1,4 @@
+import { isUndefined } from 'lodash';
 import '../css/main.scss';
 import { collapseSection, expandSection } from './collapse';
 import countdown from './countdown';
@@ -10,8 +11,6 @@ if (document.readyState === 'complete' || document.readyState !== 'loading') {
 
 // Define an array of colours, based on Material Design Color recommendations
 const colors = ['#f44336', '#009688', '#4caf50', '#ffc107', '#e91e63'];
-
-// setInterval(countdown, 1000);
 
 const getName = el => [...document.getElementsByName(el)];
 
@@ -32,5 +31,5 @@ function load() {
       }
     });
   });
-  countdown('counter', start);
+  if (!isUndefined(start)) countdown('counter', start);
 }

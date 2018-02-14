@@ -1,0 +1,13 @@
+{
+  "presets": [
+    ["babel-preset-env", {
+    "targets": {
+      "browsers": ["last 2 versions", "safari >= 7"]
+    }
+    }]],
+  "plugins": [
+    "lodash",
+    "syntax-object-rest-spread",
+    "transform-object-rest-spread"
+  ]
+}

@@ -40,28 +40,4 @@ body {
   ul {
     margin: $ul-margin;
   }
-
-  .livestream {
-    .countdown {
-      display: none;
-      text-align: center;
-
-      .counter {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        font-size: medium;
-
-        span {
-          display: block;
-          font-size: $countdown-font-size;
-        }
-      }
-    }
-
-    .video {
-      display: none;
-      width: 80%;
-    }
-  }
 }
