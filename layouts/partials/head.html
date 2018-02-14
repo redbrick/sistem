@@ -3,10 +3,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" href="/assets/main.css" />
-  <script async src="/assets/main.js"></script>
-  <link rel="shortcut icon" type="image/x-icon" href="/{{ .Site.Params.favicon }}">
-  <link rel="icon" type="image/x-icon" href="/{{ .Site.Params.favicon }}">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/main.css" />
+  <script async src="{{ .Site.BaseURL }}assets/main.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="{{ .Site.BaseURL }}{{ .Site.Params.favicon }}">
+  <link rel="icon" type="image/x-icon" href="{{ .Site.BaseURL }}{{ .Site.Params.favicon }}">
 
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -19,7 +19,7 @@
   }</script>
 
   <title>
-    {{- if eq (add .Site.BaseURL "/") (add .Permalink "") -}}
+    {{- if eq (add .Site.BaseURL "") (add .Permalink "/") -}}
         {{- .Site.Title -}} {{ (time .Site.Params.date).year }} | {{ .Site.Params.location }}
     {{- else -}}
     {{- if .Params.heading -}} {{- .Params.heading -}} {{- else -}} {{- .Site.Title }} - {{ .Title -}} {{- end -}}
