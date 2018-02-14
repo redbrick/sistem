@@ -14,8 +14,8 @@
   "author": "butlerx",
   "license": "MIT",
   "scripts": {
-    "build": "hugo && NODE_ENV=production webpack && hugo",
-    "build:dev": "NODE_ENV=development concurrently --kill-others --success first \"webpack --watch\" \"hugo serve\"",
+    "build": ".circleci/hugo && NODE_ENV=production webpack && .circleci/hugo",
+    "build:dev": "NODE_ENV=development concurrently --kill-others --success first \"webpack --watch\" \".circleci/hugo serve\"",
     "lint": "eslint . --fix && prettier --write src/**/*.scss"
   },
   "dependencies": {
