@@ -1,8 +1,9 @@
 # SISTEM Website
 
----
-
 ![with-coffee](https://img.shields.io/badge/made%20with-%E2%98%95%EF%B8%8F%20coffee-yellow.svg)
+[![CircleCI](https://circleci.com/gh/redbrick/sistem.svg?style=svg)](https://circleci.com/gh/redbrick/sistem)
+[![Github Issues](https://img.shields.io/github/issues-raw/badges/shields.svg)](https://github.com/redbrick/sistem/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/redbrick/sistem/blob/master/LICENSE.md)
 
 This repository contains the SISTEM website The website was written to have a
 similar feel to [TechWeek](https://techweek.dcu.ie)
