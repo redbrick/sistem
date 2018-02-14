@@ -1,0 +1,12 @@
+{{ define "main" }}
+  <div class="markdown-body  container-fluid">
+    <ul>
+      {{ range (.Paginator 4).Pages.ByPublishDate }}
+        <div>
+          {{ .Render "li"}}
+        </div>
+      {{ end }}
+      </ul>
+    {{ partial "pagination" . }}
+  </div>
+{{end}}

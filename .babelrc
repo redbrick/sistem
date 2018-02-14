@@ -1,17 +1,13 @@
 {
   "presets": [
-    [
-      "es2015",
-      {
-        "modules": false
-      }
-    ]
-  ],
-  "compact": true,
+    ["babel-preset-env", {
+    "targets": {
+      "browsers": ["last 2 versions", "safari >= 7"]
+    }
+    }]],
   "plugins": [
-    "add-module-exports",
-    "transform-object-assign",
-    "es6-promise",
-    "transform-async-to-generator"
+    "lodash",
+    "syntax-object-rest-spread",
+    "transform-object-rest-spread"
   ]
 }

@@ -1,0 +1,103 @@
+.deck {
+  display: grid;
+  grid-gap: 6rem; // sass-lint:disable-line no-misspelled-properties
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  padding: 6rem;
+  @media screen and (min-width: $stupid-res) {
+    grid-gap: 8rem; // sass-lint:disable-line no-misspelled-properties
+    padding: 8rem;
+  }
+
+  .card {
+    background-color: $white;
+    //max-width: $card-width;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+      0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+    .hidden {
+      display: none !important;
+    }
+
+    .countdown,
+    .livestream {
+      transition: opacity 1s ease-in-out;
+    }
+
+    .title {
+      font-size: 2rem;
+      padding: 1rem 1em;
+
+      .bold {
+        font-weight: 500;
+      }
+    }
+
+    .description {
+      line-height: 1.6em;
+      @import 'countdown';
+
+      ul {
+        box-sizing: border-box;
+        display: block;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        .header {
+          -webkit-transition: all 0.2s;
+          border-bottom: 0;
+          border-top: 1px solid #ddd;
+          cursor: pointer;
+          display: grid;
+          grid-gap: 1rem; // sass-lint:disable-line no-misspelled-properties
+          grid-template-columns: 20% 40% 40%;
+          height: initial;
+          line-height: 1.5rem;
+          padding: 1em;
+          @media screen and (max-width: $medium-phone) {
+            grid-gap: 0; // sass-lint:disable-line no-misspelled-properties
+          }
+
+          .title {
+            font-size: 1em;
+            padding: 0;
+          }
+
+          .location,
+          .time {
+            @media screen and (max-width: $large-phone) {
+              font-size: 1em;
+            }
+            font-size: 1.5vh;
+          }
+        }
+
+        .body {
+          border-top: 1px solid #ddd;
+          height: auto;
+          overflow: hidden;
+          transition: height 0.3s ease-out;
+
+          p {
+            margin: 0;
+            padding: 2rem;
+          }
+        }
+      }
+    }
+
+    .thumbnail {
+      margin: 0;
+
+      .livestream,
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .padding {
+    margin: 0 2em;
+    padding: 2em;
+  }
+}

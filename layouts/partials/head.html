@@ -1,0 +1,41 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="/assets/main.css" />
+  <script async src="/assets/main.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="/{{ .Site.Params.favicon }}">
+  <link rel="icon" type="image/x-icon" href="/{{ .Site.Params.favicon }}">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="mobile-web-app-capable" content="yes">
+  <script type="application/ld+json">{
+    "@context" : "http://schema.org",
+    "@type" : "WebSite",
+    "image" : {{ apply .Params.images "absURL" "." }},
+    "name": "{{- if .Params.heading -}} {{- .Params.heading -}} {{- else -}} {{- .Site.Title }} {{- end -}}"
+  }</script>
+
+  <title>
+    {{- if eq (add .Site.BaseURL "/") (add .Permalink "") -}}
+        {{- .Site.Title -}} {{ (time .Site.Params.date).year }} | {{ .Site.Params.location }}
+    {{- else -}}
+    {{- if .Params.heading -}} {{- .Params.heading -}} {{- else -}} {{- .Site.Title }} - {{ .Title -}} {{- end -}}
+    {{- end -}}
+  </title>
+  <meta name="description" content="{{ .Site.Params.Description }}">
+  <meta name="theme-color" content="#fff">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ .Site.Title }}">
+  <meta property="og:url" content="{{ .Site.BaseURL }}">
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+  <meta property="og:description" content="{{ .Site.Params.Description }}">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ .Site.Title }}">
+  <meta name="twitter:description" content="{{ .Site.Params.Description }}">
+  <meta name="twitter:creator" content="@{{ .Site.Params.twitter }}">
+</head>

@@ -1,0 +1,5 @@
+---
+title: "live"
+aliases:
+  - "video"
+---

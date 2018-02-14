@@ -1,0 +1,15 @@
+<nav class="nav">
+  <h1 class="title"><a href="/">{{ .Site.Title }}</a></h1>
+  <p><a href="{{ .Site.Params.Map }}" style="color: white">{{ .Site.Params.location }}</a> | {{ dateFormat "Monday, Jan 2, 2006" .Site.Params.date }}</p>
+  {{ $currentPage := . }}
+  <ul class="menu">
+    {{ range .Site.Menus.main }}
+      <li class="menu-item">
+        <a
+          class="{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{ end }}"
+          href="{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}#{{ else }}/{{ urlize .Identifier }}{{ end }}"
+          >{{ humanize .Name }}</a>
+      </li>
+    {{ end }}
+  </ul>
+</nav>

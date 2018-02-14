@@ -1,0 +1,44 @@
+// Width variables
+$small-phone: 424px;
+$medium-phone: 460px;
+$card-width: 560px;
+$large-phone: 560px;
+$tablet: 846px;
+$large-tablet: 996px;
+$stupid-res: 1440px;
+
+// Colours
+$color-primary: #777;
+$light-grey: #eee;
+$grey: #e7e7e7;
+$dark-grey: #ddd;
+$heavy-grey: #777;
+$black: #000;
+$white: #fff;
+$red: #fd6c6c;
+$blue: #337ab7;
+$dark-green: #00816a;
+$green: #7bc96f;
+$light-green: #64ceaa;
+$light-black: rgba(0, 0, 0, 0.04);
+$shadow: rgba(0, 0, 0, 0.004);
+
+$fonts: Segoe UI, Roboto, Source Sans Pro, Helvetica, Arial, sans-serif;
+
+$title-font-size: 15vmin;
+$title-font-weight: 100;
+$title-colored-font-weight: 300;
+$day-title-font-weight: 300;
+$day-title-font-weight-bold: 500;
+$event-time-font-size: 1.5vh;
+$p-font-weight: 300;
+$countdown-font-size: 2em;
+
+$title-margin: 0 32px;
+$text-margin: 0.5em 0 0;
+$menu-margin: 8px 0;
+$event-time-margin: 0 1em 0 0;
+$ul-margin: 0 0 2vh 0;
+$popout-element-margin: 0 16px;
+$popout-element-margin-active: 0 8px;
+$collapsible-body-border: 1px solid $dark-grey;

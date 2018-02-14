@@ -1,0 +1,43 @@
+.icons {
+  @include flex;
+  list-style: none;
+  margin: 0 auto;
+
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+
+  > li {
+    float: left;
+
+    &:last-child {
+      a {
+        margin-right: 0;
+      }
+    }
+  }
+
+  a {
+    color: $green;
+    display: block;
+    margin: 0 1px 0 0;
+    padding: 10px 12px;
+    text-decoration: none;
+
+    .label {
+      border-radius: 0.25em;
+      color: $blue;
+      display: inline;
+      font-family: $fonts;
+      font-size: 75%;
+      font-weight: 700;
+      line-height: 1;
+      padding: 0.2em 0.6em 0.3em;
+      text-align: center;
+      vertical-align: baseline;
+      white-space: nowrap;
+    }
+  }
+}
