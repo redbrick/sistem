@@ -1,18 +1,16 @@
 import { isUndefined, isNull } from 'lodash';
 
-const second = 1000;
-const minute = second * 60;
-const hour = minute * 60;
-const day = hour * 24;
-
-const minutes = times => times * minute;
+const period = times => (...args) => times * args[0];
+const seconds = period(1000);
+const minutes = period(seconds(60));
+const hours = period(minutes(60));
 
 const getTimeRemaining = (endtime, now = new Date().getTime()) => ({
   total: endtime - now,
-  days: Math.floor((endtime - now) / day),
-  hours: Math.floor(((endtime - now) / hour) % 24),
-  minutes: Math.floor(((endtime - now) / minute) % 24),
-  seconds: Math.floor(((endtime - now) / second) % 60),
+  days: Math.floor((endtime - now) / hours(24)),
+  hours: Math.floor(((endtime - now) / hours(1)) % 24),
+  minutes: Math.floor(((endtime - now) / minutes(1)) % 24),
+  seconds: Math.floor(((endtime - now) / seconds(1)) % 60),
 });
 
 export default function countdown(id, endtime) {
@@ -26,7 +24,7 @@ export default function countdown(id, endtime) {
   };
 
   update();
-  const timeinterval = setInterval(update, 1000);
+  const timeinterval = setInterval(update, seconds(1));
 
   function update() {
     const t = getTimeRemaining(endtime);
