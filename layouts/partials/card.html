@@ -17,7 +17,7 @@
               <div class="location"> {{ $location }} </div>
             </div>
             <div class="body collapsible" data-collapsed="true" style="height: 0";>
-              <p>By: <i>{{ .by }}</i></p>
+              <p>By: <i>{{ if .link }}<a href="{{ index . "link" }}">{{ .by }}</a>{{ else }}{{ .by }}{{ end }}</i></p>
               <p>{{ markdownify .description }}</p>
             </div>
           </li>

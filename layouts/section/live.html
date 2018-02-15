@@ -2,7 +2,7 @@
   <main>
     <section class="deck">
       {{ range $i, $event := .Site.Data.schedule.locations }}
-        {{ if $event.live }}
+        {{ if $event.video }}
         <div>
           <article class="card">
             <!-- Countdown is show up to 10 minutes before the event. 10 minutes before start of the event the livestream will come on -->
