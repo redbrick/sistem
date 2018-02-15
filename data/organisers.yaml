@@ -1,9 +1,9 @@
 ---
 organisers:
-  - name: 'DUCSS'
-    link: 'https://ducss.ie/'
   - name: 'Redbrick'
     link: 'https://redbrick.dcu.ie'
+  - name: 'DUCSS'
+    link: 'https://ducss.ie/'
   - name: 'DIT Composc'
     link: 'https://twitter.com/DITCompSoc'
   - name: 'DU Netsoc'

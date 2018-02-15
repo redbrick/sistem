@@ -33,6 +33,19 @@ body {
   @import 'card';
   @import 'layout';
 
+  .message {
+    grid-gap: 1em; // sass-lint:disable-line no-misspelled-properties
+    padding: 0;
+
+    .description {
+      margin: 1em;
+    }
+  }
+
+  .page-not-found {
+    text-align: center;
+  }
+
   p {
     font-weight: $p-font-weight;
   }

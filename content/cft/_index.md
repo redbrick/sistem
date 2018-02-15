@@ -27,4 +27,4 @@ for the day.
 
 ### Where should you submit your proposal?
 
-Submit a Proposal [here](Add Link To Google Form here).
+Submit a Proposal [here](./submission).

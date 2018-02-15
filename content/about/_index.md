@@ -14,10 +14,10 @@ When & where:
 
 Areas we are interested in:
 
-* Software development
+* Software Development
 * Security
 * Networks
-* Dare I say DevOps??
+* Site Reliability Engineer
 
 ---
 
