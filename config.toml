@@ -4,7 +4,7 @@ title = "SISTEM"
 sectionPagesMenu = "main"
 
 [Params]
-  description = "An event ran by students, for students."
+  description = "An event run by students, for students."
   favicon = "favicon.ico"
   repo = "redbrick/sistem"
   location = "Trinity Innovation Academy"
