@@ -16,7 +16,7 @@ Redbrick, DIT Compsoc and DU Netsoc. They recognised that there is no event in
 Ireland targets topic in a way that doesn't go above most students' heads.
 
 A lot of the material at conferences across the country is usually geared
-towards the graduates rather than the undergraduates. SISTEM is ran by a team of
+towards the graduates rather than the undergraduates. SISTEM is run by a team of
 undergraduates, so we know what this can feel like. It can be alienating and
 rather off putting.
 
