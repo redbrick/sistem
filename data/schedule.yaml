@@ -2,7 +2,6 @@
 locations:
   - location: Conference Room
     description: Main Track
-    live: true
     video: >
       https://www.youtube.com/embed/videoseries?list=PLPaLJSHTDMFhqzNc5C8UPJTQSKnKrjVP-
     events:
