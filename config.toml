@@ -6,6 +6,7 @@ sectionPagesMenu = "main"
 [Params]
   description = "An event run by students, for students."
   favicon = "favicon.ico"
+  icon = "icon"
   repo = "redbrick/sistem"
   location = "Trinity Innovation Academy"
   map = "https://goo.gl/maps/HMQ8QufzZ7S2"
