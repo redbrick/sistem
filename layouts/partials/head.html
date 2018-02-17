@@ -3,8 +3,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/main.css" />
-  <script async src="{{ .Site.BaseURL }}assets/main.js"></script>
   <link rel="shortcut icon" type="image/x-icon" href="{{ .Site.BaseURL }}{{ .Site.Params.favicon }}">
   <link rel="icon" type="image/x-icon" href="{{ .Site.BaseURL }}{{ .Site.Params.favicon }}">
   <link href="{{ .Site.BaseURL }}{{ .Site.Params.icon }}.png" rel="icon" />
@@ -43,4 +41,17 @@
   <meta property="og:url" content="{{ .Site.BaseURL }}">
   <meta property="og:site_name" content="{{ .Site.Title }}">
   <meta property="og:description" content="{{ .Site.Params.Description }}">
+
+  <script type="text/javascript">
+    var style = document.createElement('link');
+    style.rel = 'stylesheet';
+    style.href = '{{ .Site.BaseURL }}assets/main.css';
+    style.type = 'text/css';
+    var godefer = document.getElementsByTagName('link')[0];
+    godefer.parentNode.insertBefore(style, godefer);
+  </script>
+  <noscript>
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/main.css" />
+  </noscript>
+  <script async src="{{ .Site.BaseURL }}assets/main.js"></script>
 </head>
