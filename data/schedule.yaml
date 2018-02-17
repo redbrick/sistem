@@ -1,36 +1,11 @@
 ---
 locations:
-  - location: Workshop Room 1
-    description: Security
-    events:
-      - name: SLOT FILLED
-        by: TBA
-        time: '09:30'
-      - name: SLOT FILLED
-        by: TBA
-        time: '11:30'
-      - name: SLOT FREE
-        by: NO ONE
-        time: '14:15'
-  - location: Workshop Room 2
-    description: Algorithms & Data Structures
-    events:
-      - name: SLOT FREE
-        by: NO ONE
-        time: '09:30'
-      - name: SLOT FREE
-        by: NO ONE
-        time: '11:30'
-      - name: SLOT FREE
-        by: NO ONE
-        time: '14:15'
   - location: Conference Room
     description: Main Track
     video: >
       https://www.youtube.com/embed/videoseries?list=PLPaLJSHTDMFhqzNc5C8UPJTQSKnKrjVP-
     events:
       - name: Introduction
-        link: 'https://redbrick.dcu.ie'
         by: The SISTEM Team
         time: '09:00'
         description: >
@@ -44,12 +19,12 @@ locations:
         by: TBA
         time: '10:15'
         description: ''
-      - name: SLOT FREE
-        by: NO ONE
+      - name: SLOT FILLED
+        by: TBA
         time: '10:30'
         description: ''
-      - name: SLOT FREE
-        by: NO ONE
+      - name: SLOT FILLED
+        by: TBA
         time: '11:30'
         description: ''
       - name: SLOT FREE
@@ -74,3 +49,16 @@ locations:
         description: >
           A series of lightning talks that people can sign up to give before
           the event.
+  - location: Workshop Room
+    description: Workshop Track
+    events:
+      - name: SLOT FILLED
+        by: TBA
+        time: '09:30'
+      - name: SLOT FILLED
+        by: TBA
+        time: '11:30'
+      - name: SLOT FREE
+        by: NO ONE
+        time: '14:15'
+

@@ -2,26 +2,7 @@
 title: "About"
 ---
 
-### TL;DR
-
-Why:
-
-* No conference geared towards students
-
-When & where:
-
-* 24th of March 2018 Trinity Innovation Academy
-
-Areas we are interested in:
-
-* Software Development
-* Security
-* Networks
-* Site Reliability Engineer
-
----
-
-### What does SISTEM mean?
+### What is SISTEM and what does it mean?
 
 SISTEM is and acronym for the Students Inter Society Tech & Enterprise Meetup.
 It's pretty self explanatory, we provide a link between Students and those in
@@ -50,4 +31,3 @@ such an event to be held.
 We currently have some speakers and workshops organised and we are looking for
 more. We are interested in many different areas but we'd preferable like talks
 and workshops that don't go too far over the heads of students.
-[More Info](../cft)
