@@ -1,4 +1,4 @@
-baseURL = "http://sistem.redbrick.dcu.ie/"
+baseURL = "https://sistem.redbrick.dcu.ie/"
 languageCode = "en-us"
 title = "SISTEM"
 sectionPagesMenu = "main"
