@@ -3,33 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://sistem.redbrick.dcu.ie/about/</loc>
+    <loc>http://sistem.redbrick.dcu.ie/about/</loc>
   </url>
   
   <url>
-    <loc>https://sistem.redbrick.dcu.ie/cft/</loc>
+    <loc>http://sistem.redbrick.dcu.ie/cft/</loc>
   </url>
   
   <url>
-    <loc>https://sistem.redbrick.dcu.ie/cft/submission/</loc>
+    <loc>http://sistem.redbrick.dcu.ie/cft/submission/</loc>
   </url>
   
   <url>
-    <loc>https://sistem.redbrick.dcu.ie/categories/</loc>
+    <loc>http://sistem.redbrick.dcu.ie/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://sistem.redbrick.dcu.ie/tags/</loc>
+    <loc>http://sistem.redbrick.dcu.ie/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://sistem.redbrick.dcu.ie/live/</loc>
+    <loc>http://sistem.redbrick.dcu.ie/live/</loc>
   </url>
   
   <url>
-    <loc>https://sistem.redbrick.dcu.ie/</loc>
+    <loc>http://sistem.redbrick.dcu.ie/</loc>
   </url>
   
 </urlset>
