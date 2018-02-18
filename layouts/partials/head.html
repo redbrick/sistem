@@ -42,16 +42,7 @@
   <meta property="og:site_name" content="{{ .Site.Title }}">
   <meta property="og:description" content="{{ .Site.Params.Description }}">
 
-  <script type="text/javascript">
-    var style = document.createElement('link');
-    style.rel = 'stylesheet';
-    style.href = '{{ .Site.BaseURL }}assets/main.css';
-    style.type = 'text/css';
-    var godefer = document.getElementsByTagName('link')[0];
-    godefer.parentNode.insertBefore(style, godefer);
-  </script>
-  <noscript>
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/main.css" />
-  </noscript>
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/main.css" />
+  
   <script async src="{{ .Site.BaseURL }}assets/main.js"></script>
 </head>
