@@ -27,19 +27,19 @@ locations:
         by: TBA
         time: '11:30'
         description: ''
-      - name: SLOT FREE
-        by: NO ONE
+      - name: SLOT FILLED
+        by: TBA
         time: '12:15'
         description: ''
       - name: LUNCH
         by: NO ONE
         time: '13:15'
         description: ''
-      - name: SLOT FREE
+      - name: SLOT FILLED
         by: TBA
         time: '14:15'
         description: ''
-      - name: SLOT FREE
+      - name: SLOT FILLED
         by: TBA
         time: '15:15'
         description: ''
@@ -58,7 +58,7 @@ locations:
       - name: SLOT FILLED
         by: TBA
         time: '11:30'
-      - name: SLOT FREE
-        by: NO ONE
+      - name: SLOT FILLED
+        by: TBA
         time: '14:15'
 
