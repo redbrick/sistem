@@ -27,4 +27,6 @@ for the day.
 
 ### Where should you submit your proposal?
 
-Submit a Proposal [here](./submission).
+Submit a proposal for a talk or workshop [here](./submission).
+
+Submit a proposal for a lightning talk [here](https://redbrickdcu.typeform.com/to/BHsqO1)
