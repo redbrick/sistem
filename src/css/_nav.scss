@@ -17,6 +17,10 @@ nav {
     margin: $text-margin;
   }
 
+	h2 {
+		margin: 0;
+	}
+
   .menu {
     @include flex;
     overflow: hidden;
