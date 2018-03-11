@@ -45,7 +45,7 @@ locations:
           From Developer Laptops to Source Control Systems: Engineers at Bloomberg are well-catered for, with a whole department dedicated to providing tooling for our 5000 Engineers. In this talk, we'll look at how Bloomberg ensures the developer experience is a positive one, and how internally-offered tools are used. Boost your own developer experience with workflow tips!
       - name: Lightning Talks
         by: You Guys!
-        time: '15:!5'
+        time: '15:15'
         description: >
           A series of lightning talks that people can sign up to give before
           the event.
