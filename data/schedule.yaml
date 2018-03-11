@@ -9,12 +9,13 @@ locations:
         by: Bloomberg
         time: '08:30'
         description: >
-          Help yourself to a bite to eat and a cup of coffee, courtesy of Bloomberg!
+          Help yourself to a bite to eat and a cup of coffee, courtesy of
+          Bloomberg!
       - name: Introduction
         by: The SISTEM Team
         time: '09:00'
         description: >
-          A welcoming speech to begin the day from some of the organisers
+          A welcoming speech to begin the day with from some of the organisers
           and sponsors of SISTEM.
       - name: SAP
         by: SAP
@@ -28,7 +29,11 @@ locations:
         by: Brian Nisbet (HEAnet)
         time: '11:30'
         description: >
-          Brian Nisbet is the Network Operations Manager at HEAnet, Ireland's National Education and Research Network. He and his team are responsible for the day-to-day operations and build out of the network, which really comes down to making sure the packets all get to the right place, in the right order and as quickly as possible!
+          Brian Nisbet is the Network Operations Manager at HEAnet, Ireland's
+          National Education and Research Network. He and his team are
+          responsible for the day-to-day operations and build out of the
+          network, which really comes down to making sure the packets all get to
+          the right place, in the right order and as quickly as possible!
       - name: Google
         by: Ángela Pastor González (Google)
         time: '12:30'
@@ -37,12 +42,18 @@ locations:
         by: Bloomberg
         time: '13:15'
         description: >
-            Take some time to relax and recharge, with food one again provided courtesy of Bloomberg!
+          Take some time to relax and recharge, with food once again provided
+          courtesy of Bloomberg!
       - name: 'Bloomberg Developer Experience: Gaining Leverage on Productivity'
         by: Daniel Playle (Bloomberg)
         time: '14:15'
         description: >
-          From Developer Laptops to Source Control Systems: Engineers at Bloomberg are well-catered for, with a whole department dedicated to providing tooling for our 5000 Engineers. In this talk, we'll look at how Bloomberg ensures the developer experience is a positive one, and how internally-offered tools are used. Boost your own developer experience with workflow tips!
+          From Developer Laptops to Source Control Systems: Engineers at
+          Bloomberg is well-catered for, with a whole department dedicated to
+          providing tooling for our 5000 Engineers. In this talk, we'll look at
+          how Bloomberg ensures the developer experience is a positive one, and
+          how internally-offered tools are used. Boost your own developer
+          experience with workflow tips!
       - name: Lightning Talks
         by: You Guys!
         time: '15:15'
@@ -63,4 +74,3 @@ locations:
         by: Ohad Lutzky (Google)
         time: '14:15'
         description: 'Workshop description coming soon!'
-
