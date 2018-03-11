@@ -17,7 +17,7 @@
           ></path>
       </svg>
     </a>
-    <script> var start = (new Date('{{ time .Site.Params.date }}'));</script>
+    <script> var start = (new Date('{{ .Site.Params.date }}'));</script>
     <div class="container">
       <header>
         {{ partial "nav" . }}
