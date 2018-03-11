@@ -27,7 +27,7 @@ export default function countdown(id, endtime) {
   const timeinterval = setInterval(update, seconds(1));
 
   function update() {
-    const t = getTimeRemaining(1521882000000);
+    const t = getTimeRemaining(endtime.getTime());
 
     spans.days.innerHTML = t.days;
     spans.hours.innerHTML = `0${t.hours}`.slice(-2);
