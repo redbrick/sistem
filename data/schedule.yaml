@@ -5,60 +5,62 @@ locations:
     video: >
       https://www.youtube.com/embed/videoseries?list=PLPaLJSHTDMFhqzNc5C8UPJTQSKnKrjVP-
     events:
+      - name: Breakfast
+        by: Bloomberg
+        time: '08:30'
+        description: >
+          Help yourself to a bite to eat and a cup of coffee, courtesy of Bloomberg!
       - name: Introduction
         by: The SISTEM Team
         time: '09:00'
         description: >
           A welcoming speech to begin the day from some of the organisers
           and sponsors of SISTEM.
-      - name: SLOT FILLED
-        by: TBA
+      - name: SAP
+        by: SAP
         time: '09:30'
-        description: ''
-      - name: SLOT FILLED
-        by: TBA
-        time: '10:15'
-        description: ''
-      - name: SLOT FILLED
-        by: TBA
+        description: 'Talk details coming soon!'
+      - name: Google
+        by: Rory Ward (Google)
         time: '10:30'
-        description: ''
-      - name: SLOT FILLED
-        by: TBA
+        description: 'Talk details coming soon!'
+      - name: HEAnet's New Network - The Story So Far
+        by: Brian Nisbet (HEAnet)
         time: '11:30'
-        description: ''
-      - name: SLOT FILLED
-        by: TBA
-        time: '12:15'
-        description: ''
-      - name: LUNCH
-        by: NO ONE
+        description: >
+          Brian Nisbet is the Network Operations Manager at HEAnet, Ireland's National Education and Research Network. He and his team are responsible for the day-to-day operations and build out of the network, which really comes down to making sure the packets all get to the right place, in the right order and as quickly as possible!
+      - name: Google
+        by: Ángela Pastor González (Google)
+        time: '12:30'
+        description: 'Talk details coming soon!'
+      - name: Lunch
+        by: Bloomberg
         time: '13:15'
-        description: ''
-      - name: SLOT FILLED
-        by: TBA
+        description: >
+            Take some time to relax and recharge, with food one again provided courtesy of Bloomberg!
+      - name: 'Bloomberg Developer Experience: Gaining Leverage on Productivity'
+        by: Daniel Playle (Bloomberg)
         time: '14:15'
-        description: ''
-      - name: SLOT FILLED
-        by: TBA
-        time: '15:15'
-        description: ''
+        description: >
+          From Developer Laptops to Source Control Systems: Engineers at Bloomberg are well-catered for, with a whole department dedicated to providing tooling for our 5000 Engineers. In this talk, we'll look at how Bloomberg ensures the developer experience is a positive one, and how internally-offered tools are used. Boost your own developer experience with workflow tips!
       - name: Lightning Talks
         by: You Guys!
-        time: '16:00'
+        time: '15:15'
         description: >
           A series of lightning talks that people can sign up to give before
           the event.
   - location: Workshop Room
     description: Workshop Track
     events:
-      - name: SLOT FILLED
-        by: TBA
+      - name: Google Algorithms Workshop
+        by: Eimear Crotty (Google)
         time: '09:30'
+        description: 'Workshop description coming soon!'
       - name: SLOT FILLED
         by: TBA
         time: '11:30'
-      - name: SLOT FILLED
-        by: TBA
+      - name: Problem Solving with Code
+        by: Ohad Lutzky (Google)
         time: '14:15'
+        description: 'Workshop description coming soon!'
 

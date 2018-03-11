@@ -30,12 +30,3 @@ jobs:
       - run:
           name: "Build Site"
           command: yarn build
-      - add_ssh_keys
-      - run:
-          name: "Deploy"
-          command: |
-            set -e
-            cd public
-            git add -A
-            git commit --allow-empty -m "Deploy to GitHub pages [ci skip]"
-            git push --force --quiet origin gh-pages
