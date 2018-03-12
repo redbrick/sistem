@@ -10,10 +10,11 @@ the world of Tech and Enterprise in a casual meetup environment.
 
 ### Why
 
-SISTEM was born from the minds of students who love networking, conference
-styled meetups and all things tech. The societies behind SISTEM are DUCSS,
-Redbrick, DIT Compsoc and DU Netsoc. They recognised that there is no event in
-Ireland targets topic in a way that doesn't go above most students' heads.
+SISTEM was born from the minds of students who love networking,
+conference-styled meetups and all things tech. The societies behind SISTEM are
+Redbrick, DIT Compsoc, DUCSS, and DU Netsoc. They recognised that there is no
+event in Ireland targets topic in a way that doesn't go above most students'
+heads.
 
 A lot of the material at conferences across the country is usually geared
 towards the graduates rather than the undergraduates. SISTEM is run by a team of
@@ -22,12 +23,6 @@ rather off putting.
 
 ### When and Where
 
-We hope to hold the conference on the 24th of March 2018. This is a Saturday and
+We are holding the conference on the 24th of March 2018. This is a Saturday and
 we feel it as a perfect time during the second semester of academic study for
 such an event to be held.
-
-### Speakers/Workshops
-
-We currently have some speakers and workshops organised and we are looking for
-more. We are interested in many different areas but we'd preferable like talks
-and workshops that don't go too far over the heads of students.
