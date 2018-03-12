@@ -3,8 +3,8 @@
     <div>{{ .Site.Params.description }}</div>
     <div>
       {{- range $i, $el := .Site.Data.organisers.organisers -}}
-        {{if $i}}, {{end}} <a href="{{- $el.link -}}">{{- $el.name -}}</a>
-      {{ end -}}</div>
+        {{- if $i -}}, {{ end -}} <a href="{{- $el.link -}}">{{- $el.name -}}</a>
+      {{- end -}}</div>
   </div>
   {{ partial "social" . }}
 </footer>
