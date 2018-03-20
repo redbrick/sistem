@@ -1,6 +1,11 @@
 <nav class="nav">
   <h1 class="title"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
-	<h2><a href="{{ .Site.Params.tickets }}">Tickets available now!</a></h2>
+	<h2>
+		<a href="{{ .Site.Params.tickets }}">Tickets available now! Click here</a>
+	</h2>
+	<h3>
+		Going to the Google algorithms workshop? Check out this prework <a href = "{{ .Site.BaseURL }}assets/pre_work.pdf">here</a>
+	</h3>
   <p><a href="{{ .Site.Params.Map }}" style="color: white">{{ .Site.Params.location }}</a> | {{ dateFormat "Monday, Jan 2, 2006" .Site.Params.date }}</p>
   {{ $currentPage := . }}
   <ul class="menu">
