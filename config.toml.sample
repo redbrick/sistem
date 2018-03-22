@@ -4,7 +4,7 @@ title = "SISTEM"
 sectionPagesMenu = "main"
 
 [Params]
-	tickets = "https://dcusu.ticketsolve.com/shows/873585454/events/128131489"
+  tickets = "https://dcusu.ticketsolve.com/shows/873585454/events/128131489"
   description = "An event run by students, for students."
   favicon = "favicon.ico"
   icon = "icon"
