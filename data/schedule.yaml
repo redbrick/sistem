@@ -33,7 +33,9 @@ locations:
         by: Rory Ward (Google)
         time: '10:30'
         description: 'Scaling-up a System'
-      - name: HEAnet's New Network - The Story So Far
+      - name: >
+              HEAnet's New Network - 
+              The Story So Far
         by: Brian Nisbet (HEAnet)
         time: '11:30'
         description: >
@@ -74,11 +76,14 @@ locations:
       - name: Google Algorithms Workshop
         by: Eimear Crotty (Google)
         time: '09:30'
-        description: 'Solving problems with code'
+        description: >
+                Planning to attend this workshop?
+                Comeplete the pre-work here -
+                https://sistem.redbrick.dcu.ie/assets/pre_work.pdf
       - name: SLOT FILLED
         by: TBA
         time: '11:30'
       - name: Problem Solving with Code
         by: Ohad Lutzky (Google)
         time: '14:15'
-        description: 'Solving problems with code'
+        description: 'Solving problems with code.'
