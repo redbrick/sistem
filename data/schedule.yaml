@@ -34,12 +34,12 @@ locations:
         by: Rory Ward (Google)
         time: '10:30'
         description: 'Scaling-up a System'
-      - name:
+      - name: >
               HEAnet's New Network - 
               The Story So Far
         by: Brian Nisbet (HEAnet)
         time: '11:30'
-        description:
+        description: >
           Brian Nisbet is the Network Operations Manager at HEAnet, Ireland's
           National Education and Research Network. He and his team are
           responsible for the day-to-day operations and build out of the
@@ -84,7 +84,9 @@ locations:
       - name: Microsoft - Building a Modern SPA with Typescript and DotNet.
         by: Siddarth Sharma
         time: '11:30'
-        description: Modern Web Apps are all the rage these days. Through this workshop you’ll get hands-on experience with some powerful technologies powering Microsoft’s SPA’s such as Typescript, ASP.NET Web API, React and Webpack. You'll combine these to develop a Url Minifier, and, get an insight into the skills needed to become a Full stack developer at Microsoft.
+        description: >
+           Modern Web Apps are all the rage these days. Through this workshop you’ll get hands-on experience with some powerful technologies powering Microsoft’s SPA’s such as Typescript, ASP.NET Web API, React and Webpack. 
+           You'll combine these to develop a Url Minifier, and, get an insight into the skills needed to become a Full stack developer at Microsoft.
       - name: Google - Problem Solving with Code
         by: Ohad Lutzky (Google)
         time: '14:15'
