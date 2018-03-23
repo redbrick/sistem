@@ -11,13 +11,13 @@
     text-align: center;
 
     .digit {
-      background: #00bf96;
+      background: $green;
       border-radius: 3px;
       display: inline-block;
       padding: 1rem;
 
       > span {
-        background: $dark-green;
+        background: #5d8818;
         border-radius: 3px;
         display: inline-block;
         padding: 15px;

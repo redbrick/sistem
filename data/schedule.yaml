@@ -2,7 +2,8 @@
 locations:
   - location: Conference Room
     description: Main Track
-    video: https://www.youtube.com/embed/GT__qY9J1UQ
+    video: >
+        https://www.youtube.com/embed/videoseries?list=PLPaLJSHTDMFhqzNc5C8UPJTQSKnKrjVP-
     events:
       - name: Breakfast
         by: Bloomberg
@@ -33,12 +34,12 @@ locations:
         by: Rory Ward (Google)
         time: '10:30'
         description: 'Scaling-up a System'
-      - name: >
+      - name:
               HEAnet's New Network - 
               The Story So Far
         by: Brian Nisbet (HEAnet)
         time: '11:30'
-        description: >
+        description:
           Brian Nisbet is the Network Operations Manager at HEAnet, Ireland's
           National Education and Research Network. He and his team are
           responsible for the day-to-day operations and build out of the
@@ -73,17 +74,18 @@ locations:
   - location: Workshop Room
     description: Workshop Track
     events:
-      - name: Google Algorithms Workshop
+      - name: Google - Algorithms Workshop
         by: Eimear Crotty (Google)
         time: '09:30'
-        description: >
+        description: 
                 Planning to attend this workshop?
                 Comeplete the pre-work here -
                 https://sistem.redbrick.dcu.ie/assets/pre_work.pdf
-      - name: SLOT FILLED
+      - name: Microsoft - Building a Modern SPA with Typescript and DotNet.
         by: TBA
         time: '11:30'
-      - name: Problem Solving with Code
+        description: Modern Web Apps are all the rage these days. Through this workshop you’ll get hands-on experience with some powerful technologies powering Microsoft’s SPA’s such as Typescript, ASP.NET Web API, React and Webpack. Combine these to develop a Url Minifier, and, get an insight into the skills needed to become a Full stack developer at Microsoft.
+      - name: Google - Problem Solving with Code
         by: Ohad Lutzky (Google)
         time: '14:15'
-        description: 'Solving problems with code.'
+        description: 'Google bring us a problem solving workshop, showing you best practices for how to go about solving problems with code.'
