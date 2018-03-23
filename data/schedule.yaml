@@ -2,8 +2,7 @@
 locations:
   - location: Conference Room
     description: Main Track
-    video: >
-      https://www.youtube.com/embed/videoseries?list=PLPaLJSHTDMFhqzNc5C8UPJTQSKnKrjVP-
+    video: https://www.youtube.com/embed/GT__qY9J1UQ
     events:
       - name: Breakfast
         by: Bloomberg
@@ -17,15 +16,26 @@ locations:
         description: >
           A welcoming speech to begin the day with from some of the organisers
           and sponsors of SISTEM.
-      - name: SAP
-        by: SAP
+      - name: SAP - The Power of Predictive Analytics and Machine Learning in Your Applications
+        by: Balazs Pete (SAP)
         time: '09:30'
-        description: 'Talk details coming soon!'
-      - name: Google
+        description: >
+          The application edition of SAP Predictive Analytics uses machine learning to 
+          provide business users with predictions about the future. It provides enterprises 
+          and application developers with the flexibility to add, modify and extend predictive 
+          and machine models within these applications to solve new problems. 
+          With a single click, users can easily automate the retraining, scoring and deployment 
+          of a model right within the application, without the need for external tools or 
+          extensions to the original application. This talk will introduce how developers 
+          can easily put powerful data-driven insights at the fingertips of every 
+          business user with minimal effort.
+      - name: Google - Scaling-up a System
         by: Rory Ward (Google)
         time: '10:30'
-        description: 'Talk details coming soon!'
-      - name: HEAnet's New Network - The Story So Far
+        description: 'Scaling-up a System'
+      - name: >
+              HEAnet's New Network - 
+              The Story So Far
         by: Brian Nisbet (HEAnet)
         time: '11:30'
         description: >
@@ -34,10 +44,10 @@ locations:
           responsible for the day-to-day operations and build out of the
           network, which really comes down to making sure the packets all get to
           the right place, in the right order and as quickly as possible!
-      - name: Google
+      - name: Google - Engineering Reliability into Sites
         by: Ángela Pastor González (Google)
         time: '12:30'
-        description: 'Talk details coming soon!'
+        description: 'Engineering Reliability into Sites'
       - name: Lunch
         by: Bloomberg
         time: '13:15'
@@ -66,11 +76,14 @@ locations:
       - name: Google Algorithms Workshop
         by: Eimear Crotty (Google)
         time: '09:30'
-        description: 'Workshop description coming soon!'
+        description: >
+                Planning to attend this workshop?
+                Comeplete the pre-work here -
+                https://sistem.redbrick.dcu.ie/assets/pre_work.pdf
       - name: SLOT FILLED
         by: TBA
         time: '11:30'
       - name: Problem Solving with Code
         by: Ohad Lutzky (Google)
         time: '14:15'
-        description: 'Workshop description coming soon!'
+        description: 'Solving problems with code.'
