@@ -3,7 +3,7 @@ locations:
   - location: Conference Room
     description: Main Track
     video: >
-        https://www.youtube.com/embed/videoseries?list=PLPaLJSHTDMFhqzNc5C8UPJTQSKnKrjVP-
+        https://media.heanet.ie/player/live/e20a4fa8c5ddf2769a9dce88de71cbcb
     events:
       - name: Breakfast
         by: Bloomberg
