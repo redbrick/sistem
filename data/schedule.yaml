@@ -82,9 +82,9 @@ locations:
                 Comeplete the pre-work here -
                 https://sistem.redbrick.dcu.ie/assets/pre_work.pdf
       - name: Microsoft - Building a Modern SPA with Typescript and DotNet.
-        by: TBA
+        by: Siddarth Sharma
         time: '11:30'
-        description: Modern Web Apps are all the rage these days. Through this workshop you’ll get hands-on experience with some powerful technologies powering Microsoft’s SPA’s such as Typescript, ASP.NET Web API, React and Webpack. Combine these to develop a Url Minifier, and, get an insight into the skills needed to become a Full stack developer at Microsoft.
+        description: Modern Web Apps are all the rage these days. Through this workshop you’ll get hands-on experience with some powerful technologies powering Microsoft’s SPA’s such as Typescript, ASP.NET Web API, React and Webpack. You'll combine these to develop a Url Minifier, and, get an insight into the skills needed to become a Full stack developer at Microsoft.
       - name: Google - Problem Solving with Code
         by: Ohad Lutzky (Google)
         time: '14:15'
