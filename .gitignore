@@ -107,3 +107,7 @@ typings/
 .env
 
 .sass-cache
+
+# Replaced by a sample
+config.toml
+
